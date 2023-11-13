@@ -2,7 +2,7 @@
     "PerguntasPlanejamento": [
         [
             {
-                "Pergunta": "Pergunta 1(fácil): ",
+                "nivel": "fácil",
                 "Enunciado": "Segundo Stoner e Freeman, quantos passos tem o processo formal de planejamento?",
                 "Opcoes": {
                     "a": "6 passos",
@@ -13,7 +13,7 @@
                 "RespostaCorreta": "b"
             },
             {
-                "Pergunta": "Pergunta 2(fácil): ",
+                "nivel": "fácil",
                 "Enunciado": "Segundo Stoner e Freeman, qual o 4° passo do processo formal de planejamento?",
                 "Opcoes": {
                     "a": "Formulação de objetivos",
@@ -24,8 +24,8 @@
                 "RespostaCorreta": "d"
             },
             {
-                "Pergunta": "Pergunta 3 (fácil):",
-                "Enunciado": "A matriz BCG é um modelo de portfólio criado pela Boston Consulting Group. Observe as seguintes afirmativas:",
+                "nivel": "fácil",
+                "Enunciado": "A matriz BCG é um modelo de portfólio criado pela Boston Consulting Group. Observe as seguintes afirmativas",
                 "Opcoes": {
                     "a": "I - O produto estrela é o produto no qual possui mais investimentos e menos lucratividade",
                     "b": "II - O produto criança problema é aquele que para virar estrela receberá investimento vindos do lucro da vaca leiteira e do cachorro.",
@@ -36,7 +36,7 @@
                 "RespostaCorreta": "c"
             },
             {
-                "Pergunta": "Pergunta 4 (média):",
+                "nivel": "média",
                 "Enunciado": "De acordo com Porter quais são as 5 forças no mercado?",
                 "Opcoes": {
                     "a": "As barreiras para entrada no mercado, O poder de barganha dos compradores, O poder de barganha dos fornecedores, A disputa por um produto e A ameaça de produtos industrializados.",
@@ -47,7 +47,7 @@
                 "RespostaCorreta": "b"
             },
             {
-                "Pergunta": "Pergunta 5 (difícil):",
+                "nivel": "difícil",
                 "Enunciado": "Qual é a abordagem correta para avaliar a força relativa de uma organização em relação aos seus competidores?",
                 "Opcoes": {
                     "a": "Identificar o que a organização faz bem ou mal.",
@@ -58,7 +58,7 @@
                 "RespostaCorreta": "b"
             },
             {
-                "Pergunta": "Pergunta 6 (difícil):",
+                "nivel": "difícil",
                 "Enunciado": "Como podem as mudanças no ambiente de mercado representar oportunidades para uma organização?",
                 "Opcoes": {
                     "a": "Ameaçando a estabilidade da organização.",
@@ -69,7 +69,7 @@
                 "RespostaCorreta": "c"
             },
             {
-                "Pergunta": "Pergunta 7 (difícil):",
+                "nivel": "difícil",
                 "Enunciado": "O que motivou a necessidade de procedimentos formais na coordenação de atividades empresariais, levando à abordagem da formulação de política?",
                 "Opcoes": {
                     "a": "A redução das funções da empresa.",
@@ -80,7 +80,7 @@
                 "RespostaCorreta": "b"
             },
             {
-                "Pergunta": "Pergunta 8 (Fácil):",
+                "nivel": "fácil",
                 "Enunciado": "Como a diferenciação de produtos pode mitigar o poder de barganha dos clientes em uma negociação?",
                 "Opcoes": {
                     "a": "Ao oferecer produtos exclusivos e únicos, reduzindo assim a sensibilidade dos clientes aos preços e aumentando a lealdade à marca.",
@@ -91,7 +91,7 @@
                 "RespostaCorreta": "a"
             },
             {
-                "Pergunta": "Pergunta 9 (Médio):",
+                "nivel": "médio",
                 "Enunciado": "Qual das seguintes afirmações melhor descreve a estratégia de diversificação relacionada em nível corporativo?",
                 "Opcoes": {
                     "a": "Diversificação relacionada ocorre quando uma empresa expande seus negócios para indústrias ou mercados não relacionados aos seus produtos ou serviços existentes.",
@@ -102,7 +102,7 @@
                 "RespostaCorreta": "b"
             },
             {
-                "Pergunta": "Pergunta 10 (Médio):",
+                "nivel": "médio",
                 "Enunciado": "Uma empresa possui um portfólio de produtos que inclui um produto líder de mercado com alta participação de mercado, mas em um mercado de crescimento lento, um produto em ascensão com participação de mercado média em um mercado de crescimento rápido, e um produto com baixa participação de mercado e baixo crescimento no mercado. Qual dos seguintes quadrantes da Matriz BCG representa cada um desses produtos?",
                 "Opcoes": {
                     "a": "Produto líder de mercado: Estrela; Produto em ascensão: Vaca Leiteira; Produto com baixa participação de mercado: Ponto de Interrogação.",
