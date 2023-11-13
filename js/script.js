@@ -9,7 +9,9 @@
 	
 	var tileSize = 32;
 	var tileSrcSize = 96;
-	
+	var vida = 10
+	var armour = 10 
+	var dano = 2
 	var img = new Image();
 		img.src = "img/img.png";
 		img.addEventListener("load",function(){
@@ -17,13 +19,14 @@
 		},false);
 	
 	var walls = [];
-	
+	var heartHUD = new Image();
+	heartHUD.src = "img/heart.png";
 	var player = {
 		x: tileSize + 2,
 		y: tileSize + 2,
 		width: 24,
 		height: 32,
-		speed: 5,
+		speed: 3,
 
 		//atributos de animação
 		srcX: 0,
@@ -117,13 +120,15 @@
 	}
 
 	var staticCharacters = [];
-
+	var imgEnemy1 = new Image();
+	imgEnemy1.src = "img/enemy_glad.png";
 	var enemy1 = {
 		x: tileSize * 5,
 		y: tileSize * 5,
 		width: 32,
-		height: 32,
-		collisionPopupText: "Personagem estático colidido!"
+		height: 30,
+		collisionPopupText: "Personagem estático colidido!",
+		img: imgEnemy1
 	};
 	staticCharacters.push(enemy1);
 	var cam = {
@@ -219,58 +224,60 @@
 	
     //Ajuste de orientação
 	function update(){
-		if(mvLeft && !mvRight){
-			player.x -= player.speed;
-			player.srcY = tileSrcSize + player.height * 2;
-		} else 
-		if(mvRight && !mvLeft){
-			player.x += player.speed;
-			player.srcY = tileSrcSize + player.height * 3;
-		}
-		if(mvUp && !mvDown){
-			player.y -= player.speed;
-			player.srcY = tileSrcSize + player.height * 1;
-		} else 
-		if(mvDown && !mvUp){
-			player.y += player.speed;
-			player.srcY = tileSrcSize + player.height * 0;
-		}
-		
-		//animação
-		if(mvLeft || mvRight || mvUp || mvDown){
-			player.countAnim++;
+		if (document.querySelector("#modalPopUpPergunta").style.visibility != 'visible') {
+			if(mvLeft && !mvRight){
+				player.x -= player.speed;
+				player.srcY = tileSrcSize + player.height * 2;
+			} else 
+			if(mvRight && !mvLeft){
+				player.x += player.speed;
+				player.srcY = tileSrcSize + player.height * 3;
+			}
+			if(mvUp && !mvDown){
+				player.y -= player.speed;
+				player.srcY = tileSrcSize + player.height * 1;
+			} else 
+			if(mvDown && !mvUp){
+				player.y += player.speed;
+				player.srcY = tileSrcSize + player.height * 0;
+			}
 			
-			if(player.countAnim >= 40){
+			//animação
+			if(mvLeft || mvRight || mvUp || mvDown){
+				player.countAnim++;
+				
+				if(player.countAnim >= 40){
+					player.countAnim = 0;
+				}
+				
+				player.srcX = Math.floor(player.countAnim/5) * player.width;
+			} else {
+				player.srcX = 0;
 				player.countAnim = 0;
 			}
 			
-			player.srcX = Math.floor(player.countAnim/5) * player.width;
-		} else {
-			player.srcX = 0;
-			player.countAnim = 0;
+			for(var i in walls){
+				var wall = walls[i];
+				blockRectangle(player,wall);
+			}
+			
+			if(player.x < cam.innerLeftBoundary()){
+				cam.x = player.x - (cam.width * 0.25);
+			}
+			if(player.y < cam.innerTopBoundary()){
+				cam.y = player.y - (cam.height * 0.25);
+			}
+			if(player.x + player.width > cam.innerRightBoundary()){
+				cam.x = player.x + player.width - (cam.width * 0.75);
+			}
+			if(player.y + player.height > cam.innerBottomBoundary()){
+				cam.y = player.y + player.height - (cam.height * 0.75);
+			}
+			
+			cam.x = Math.max(0,Math.min(T_WIDTH - cam.width,cam.x));
+			cam.y = Math.max(0,Math.min(T_HEIGHT - cam.height,cam.y));
+			updateStaticCharacters();
 		}
-		
-		for(var i in walls){
-			var wall = walls[i];
-			blockRectangle(player,wall);
-		}
-		
-		if(player.x < cam.innerLeftBoundary()){
-			cam.x = player.x - (cam.width * 0.25);
-		}
-		if(player.y < cam.innerTopBoundary()){
-			cam.y = player.y - (cam.height * 0.25);
-		}
-		if(player.x + player.width > cam.innerRightBoundary()){
-			cam.x = player.x + player.width - (cam.width * 0.75);
-		}
-		if(player.y + player.height > cam.innerBottomBoundary()){
-			cam.y = player.y + player.height - (cam.height * 0.75);
-		}
-		
-		cam.x = Math.max(0,Math.min(T_WIDTH - cam.width,cam.x));
-		cam.y = Math.max(0,Math.min(T_HEIGHT - cam.height,cam.y));
-		updateStaticCharacters();
 	}
 	
 	function render(){
@@ -297,11 +304,15 @@
 			player.srcX,player.srcY,player.width,player.height,
 			player.x,player.y,player.width,player.height
 		);
+		ctx.font = "16px serif";
+		ctx.fillStyle = "white";
+		ctx.drawImage(heartHUD, 5, 5, 12, 12)
+		vidaHUD = ctx.fillText(vida, 20, 15, 48)
 		ctx.restore();
 		for (var i in staticCharacters) {
 			var staticChar = staticCharacters[i];
 			ctx.fillStyle = "red"; // Cor de exemplo para personagens estáticos
-			ctx.drawImage(img, staticChar.x, staticChar.y, staticChar.width, staticChar.height);
+			ctx.drawImage(staticChar.img, staticChar.x, staticChar.y, staticChar.width, staticChar.height);
 		}
 	}
 	
