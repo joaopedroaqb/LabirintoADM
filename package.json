@@ -1,117 +1,227 @@
 {
     "PerguntasPlanejamento": [
-        [
-            {
-                "nivel": "fácil",
-                "Enunciado": "Segundo Stoner e Freeman, quantos passos tem o processo formal de planejamento?",
-                "Opcoes": {
-                    "a": "6 passos",
-                    "b": "9 passos",
-                    "c": "5 passos",
-                    "d": "2 passos"
-                },
-                "RespostaCorreta": "b"
+        {
+            "nivel": "fácil",
+            "Enunciado": "Segundo Stoner e Freeman, quantos passos tem o processo formal de planejamento?",
+            "Opcoes": {
+                "a": "6 passos",
+                "b": "9 passos",
+                "c": "5 passos",
+                "d": "2 passos"
             },
-            {
-                "nivel": "fácil",
-                "Enunciado": "Segundo Stoner e Freeman, qual o 4° passo do processo formal de planejamento?",
-                "Opcoes": {
-                    "a": "Formulação de objetivos",
-                    "b": "Implementação da estratégia",
-                    "c": "Análise ambiental",
-                    "d": "Análise de recursos"
-                },
-                "RespostaCorreta": "d"
+            "RespostaCorreta": "b"
+        },
+        {
+            "nivel": "fácil",
+            "Enunciado": "Segundo Stoner e Freeman, qual o 4° passo do processo formal de planejamento?",
+            "Opcoes": {
+                "a": "Formulação de objetivos",
+                "b": "Implementação da estratégia",
+                "c": "Análise ambiental",
+                "d": "Análise de recursos"
             },
-            {
-                "nivel": "fácil",
-                "Enunciado": "A matriz BCG é um modelo de portfólio criado pela Boston Consulting Group. Observe as seguintes afirmativas",
-                "Opcoes": {
-                    "a": "I - O produto estrela é o produto no qual possui mais investimentos e menos lucratividade",
-                    "b": "II - O produto criança problema é aquele que para virar estrela receberá investimento vindos do lucro da vaca leiteira e do cachorro.",
-                    "c": "III - A matriz BCG possui apenas dois aspectos: as vendas e se o produto dá lucro ou prejuízo",
-                    "d": "IV - A vaca leiteira é um produto que está estável dentro do mercado, possui alta participação de mercado e baixa taxa de crescimento.",
-                    "e": "V - O produto estrela é o melhor da empresa, possuindo alta participação de mercado e alta taxa de crescimento."
-                },
-                "RespostaCorreta": "c"
+            "RespostaCorreta": "d"
+        },
+        {
+            "nivel": "fácil",
+            "Enunciado": "A matriz BCG é um modelo de portfólio criado pela Boston Consulting Group. Observe as seguintes afirmativas",
+            "Opcoes": {
+                "a": "I - O produto estrela é o produto no qual possui mais investimentos e menos lucratividade",
+                "b": "II - O produto criança problema é aquele que para virar estrela receberá investimento vindos do lucro da vaca leiteira e do cachorro.",
+                "c": "III - A matriz BCG possui apenas dois aspectos: as vendas e se o produto dá lucro ou prejuízo",
+                "d": "IV - A vaca leiteira é um produto que está estável dentro do mercado, possui alta participação de mercado e baixa taxa de crescimento.",
+                "e": "V - O produto estrela é o melhor da empresa, possuindo alta participação de mercado e alta taxa de crescimento."
             },
-            {
-                "nivel": "média",
-                "Enunciado": "De acordo com Porter quais são as 5 forças no mercado?",
-                "Opcoes": {
-                    "a": "As barreiras para entrada no mercado, O poder de barganha dos compradores, O poder de barganha dos fornecedores, A disputa por um produto e A ameaça de produtos industrializados.",
-                    "b": "As barreiras para entrada no mercado, O poder de barganha dos compradores, O poder de barganha dos fornecedores, A disputa por uma posição e A ameaça de produtos de substituição.",
-                    "c": "As barreiras para saída do mercado, O poder de revenda dos compradores, O poder de barganha dos fornecedores, A disputa por uma posição e A ameaça de produtos de substituição.",
-                    "d": "As barreiras para entrada no mercado, O poder de barganha dos compradores, A rivalidade entre concorrentes, A disputa por uma posição e A ameaça de produtos de substituição"
-                },
-                "RespostaCorreta": "b"
+            "RespostaCorreta": "c"
+        },
+        {
+            "nivel": "média",
+            "Enunciado": "De acordo com Porter quais são as 5 forças no mercado?",
+            "Opcoes": {
+                "a": "As barreiras para entrada no mercado, O poder de barganha dos compradores, O poder de barganha dos fornecedores, A disputa por um produto e A ameaça de produtos industrializados.",
+                "b": "As barreiras para entrada no mercado, O poder de barganha dos compradores, O poder de barganha dos fornecedores, A disputa por uma posição e A ameaça de produtos de substituição.",
+                "c": "As barreiras para saída do mercado, O poder de revenda dos compradores, O poder de barganha dos fornecedores, A disputa por uma posição e A ameaça de produtos de substituição.",
+                "d": "As barreiras para entrada no mercado, O poder de barganha dos compradores, A rivalidade entre concorrentes, A disputa por uma posição e A ameaça de produtos de substituição"
             },
-            {
-                "nivel": "difícil",
-                "Enunciado": "Qual é a abordagem correta para avaliar a força relativa de uma organização em relação aos seus competidores?",
-                "Opcoes": {
-                    "a": "Identificar o que a organização faz bem ou mal.",
-                    "b": "Comparar o desempenho da organização com seus concorrentes.",
-                    "c": "Analisar as estratégias da concorrência.",
-                    "d": "Medir a satisfação dos funcionários."
-                },
-                "RespostaCorreta": "b"
+            "RespostaCorreta": "b"
+        },
+        {
+            "nivel": "difícil",
+            "Enunciado": "Qual é a abordagem correta para avaliar a força relativa de uma organização em relação aos seus competidores?",
+            "Opcoes": {
+                "a": "Identificar o que a organização faz bem ou mal.",
+                "b": "Comparar o desempenho da organização com seus concorrentes.",
+                "c": "Analisar as estratégias da concorrência.",
+                "d": "Medir a satisfação dos funcionários."
             },
-            {
-                "nivel": "difícil",
-                "Enunciado": "Como podem as mudanças no ambiente de mercado representar oportunidades para uma organização?",
-                "Opcoes": {
-                    "a": "Ameaçando a estabilidade da organização.",
-                    "b": "Tornando obsoletas as capacidades existentes da organização.",
-                    "c": "Criando novas oportunidades de negócios ou expansão.",
-                    "d": "Diminuindo a concorrência no mercado."
-                },
-                "RespostaCorreta": "c"
+            "RespostaCorreta": "b"
+        },
+        {
+            "nivel": "difícil",
+            "Enunciado": "Como podem as mudanças no ambiente de mercado representar oportunidades para uma organização?",
+            "Opcoes": {
+                "a": "Ameaçando a estabilidade da organização.",
+                "b": "Tornando obsoletas as capacidades existentes da organização.",
+                "c": "Criando novas oportunidades de negócios ou expansão.",
+                "d": "Diminuindo a concorrência no mercado."
             },
-            {
-                "nivel": "difícil",
-                "Enunciado": "O que motivou a necessidade de procedimentos formais na coordenação de atividades empresariais, levando à abordagem da formulação de política?",
-                "Opcoes": {
-                    "a": "A redução das funções da empresa.",
-                    "b": "A expansão dos territórios de vendas.",
-                    "c": "A coordenação informal de atividades.",
-                    "d": "A oferta de produtos para consumidores variados."
-                },
-                "RespostaCorreta": "b"
+            "RespostaCorreta": "c"
+        },
+        {
+            "nivel": "difícil",
+            "Enunciado": "O que motivou a necessidade de procedimentos formais na coordenação de atividades empresariais, levando à abordagem da formulação de política?",
+            "Opcoes": {
+                "a": "A redução das funções da empresa.",
+                "b": "A expansão dos territórios de vendas.",
+                "c": "A coordenação informal de atividades.",
+                "d": "A oferta de produtos para consumidores variados."
             },
-            {
-                "nivel": "fácil",
-                "Enunciado": "Como a diferenciação de produtos pode mitigar o poder de barganha dos clientes em uma negociação?",
-                "Opcoes": {
-                    "a": "Ao oferecer produtos exclusivos e únicos, reduzindo assim a sensibilidade dos clientes aos preços e aumentando a lealdade à marca.",
-                    "b": "Ao reduzir a qualidade dos produtos para torná-los mais acessíveis, tornando-os menos atraentes para os clientes que buscam preços baixos.",
-                    "c": "Ao oferecer descontos temporários para atrair clientes temporários, mantendo um preço mais alto para clientes regulares.",
-                    "d": "Ao manter os preços dos produtos inalterados, independentemente das preferências dos clientes, para mostrar consistência e confiabilidade da marca."
-                },
-                "RespostaCorreta": "a"
+            "RespostaCorreta": "b"
+        },
+        {
+            "nivel": "fácil",
+            "Enunciado": "Como a diferenciação de produtos pode mitigar o poder de barganha dos clientes em uma negociação?",
+            "Opcoes": {
+                "a": "Ao oferecer produtos exclusivos e únicos, reduzindo assim a sensibilidade dos clientes aos preços e aumentando a lealdade à marca.",
+                "b": "Ao reduzir a qualidade dos produtos para torná-los mais acessíveis, tornando-os menos atraentes para os clientes que buscam preços baixos.",
+                "c": "Ao oferecer descontos temporários para atrair clientes temporários, mantendo um preço mais alto para clientes regulares.",
+                "d": "Ao manter os preços dos produtos inalterados, independentemente das preferências dos clientes, para mostrar consistência e confiabilidade da marca."
             },
-            {
-                "nivel": "médio",
-                "Enunciado": "Qual das seguintes afirmações melhor descreve a estratégia de diversificação relacionada em nível corporativo?",
-                "Opcoes": {
-                    "a": "Diversificação relacionada ocorre quando uma empresa expande seus negócios para indústrias ou mercados não relacionados aos seus produtos ou serviços existentes.",
-                    "b": "Diversificação relacionada envolve entrar em novos negócios que têm alguma ligação ou sinergia com os negócios existentes da empresa, proporcionando oportunidades de compartilhamento de recursos e transferência de conhecimento.",
-                    "c": "Diversificação relacionada refere-se à estratégia de se concentrar exclusivamente em um único produto ou serviço para maximizar a especialização e a eficiência operacional.",
-                    "d": "Diversificação relacionada é um termo usado exclusivamente no contexto financeiro e não tem relevância na estratégia corporativa."
-                },
-                "RespostaCorreta": "b"
+            "RespostaCorreta": "a"
+        },
+        {
+            "nivel": "médio",
+            "Enunciado": "Qual das seguintes afirmações melhor descreve a estratégia de diversificação relacionada em nível corporativo?",
+            "Opcoes": {
+                "a": "Diversificação relacionada ocorre quando uma empresa expande seus negócios para indústrias ou mercados não relacionados aos seus produtos ou serviços existentes.",
+                "b": "Diversificação relacionada envolve entrar em novos negócios que têm alguma ligação ou sinergia com os negócios existentes da empresa, proporcionando oportunidades de compartilhamento de recursos e transferência de conhecimento.",
+                "c": "Diversificação relacionada refere-se à estratégia de se concentrar exclusivamente em um único produto ou serviço para maximizar a especialização e a eficiência operacional.",
+                "d": "Diversificação relacionada é um termo usado exclusivamente no contexto financeiro e não tem relevância na estratégia corporativa."
             },
-            {
-                "nivel": "médio",
-                "Enunciado": "Uma empresa possui um portfólio de produtos que inclui um produto líder de mercado com alta participação de mercado, mas em um mercado de crescimento lento, um produto em ascensão com participação de mercado média em um mercado de crescimento rápido, e um produto com baixa participação de mercado e baixo crescimento no mercado. Qual dos seguintes quadrantes da Matriz BCG representa cada um desses produtos?",
-                "Opcoes": {
-                    "a": "Produto líder de mercado: Estrela; Produto em ascensão: Vaca Leiteira; Produto com baixa participação de mercado: Ponto de Interrogação.",
-                    "b": "Produto líder de mercado: Vaca Leiteira; Produto em ascensão: Estrela; Produto com baixa participação de mercado: Ponto de Interrogação.",
-                    "c": "Produto líder de mercado: Estrela; Produto em ascensão: Ponto de Interrogação; Produto com baixa participação de mercado: Vaca Leiteira.",
-                    "d": "Produto líder de mercado: Vaca Leiteira; Produto em ascensão: Ponto de Interrogação; Produto com baixa participação de mercado: Estrela."
-                },
-                "RespostaCorreta": "a"
-            }
-        ]
+            "RespostaCorreta": "b"
+        },
+        {
+            "nivel": "médio",
+            "Enunciado": "Uma empresa possui um portfólio de produtos que inclui um produto líder de mercado com alta participação de mercado, mas em um mercado de crescimento lento, um produto em ascensão com participação de mercado média em um mercado de crescimento rápido, e um produto com baixa participação de mercado e baixo crescimento no mercado. Qual dos seguintes quadrantes da Matriz BCG representa cada um desses produtos?",
+            "Opcoes": {
+                "a": "Produto líder de mercado: Estrela; Produto em ascensão: Vaca Leiteira; Produto com baixa participação de mercado: Ponto de Interrogação.",
+                "b": "Produto líder de mercado: Vaca Leiteira; Produto em ascensão: Estrela; Produto com baixa participação de mercado: Ponto de Interrogação.",
+                "c": "Produto líder de mercado: Estrela; Produto em ascensão: Ponto de Interrogação; Produto com baixa participação de mercado: Vaca Leiteira.",
+                "d": "Produto líder de mercado: Vaca Leiteira; Produto em ascensão: Ponto de Interrogação; Produto com baixa participação de mercado: Estrela."
+            },
+            "RespostaCorreta": "a"
+        }
+    ],
+    "PerguntasOrganizacao": [
+        {
+            "nivel": "fácil",
+            "Enunciado": "Qual é a principal função da cadeia de comando na administração?",
+            "Opcoes": {
+                "A": "Facilitar a comunicação interna",
+                "B": "Criar ordens e prioridades conflitantes",
+                "C": "Reduzir a flexibilidade da organização",
+                "D": "Não afeta o desempenho da organização"
+            },
+            "RespostaCorreta": "A"
+        },
+        {
+            "nivel": "média",
+            "Enunciado": "Como o tamanho de uma organização afeta sua estrutura?",
+            "Opcoes": {
+                "A": "O tamanho tem um impacto linear, com organizações maiores sendo sempre mais mecanísticas.",
+                "B": "Grandes organizações tendem a ser menos mecanísticas do que as pequenas.",
+                "C": "O tamanho inicial da organização é o único fator que determina sua estrutura.",
+                "D": "O tamanho afeta a estrutura de forma não linear, com organizações de cerca de duas mil pessoas tornando-se mais mecanísticas, mas com impacto reduzido à medida que crescem ainda mais."
+            },
+            "RespostaCorreta": "D"
+        },
+        {
+            "nivel": "fácil",
+            "Enunciado": "Como a tecnologia afeta a estrutura organizacional?",
+            "Opcoes": {
+                "A": "A tecnologia não tem influência na estrutura organizacional.",
+                "B": "Quanto mais rotineira for a tecnologia, mais provável é que a estrutura seja orgânica.",
+                "C": "A tecnologia sempre resulta em uma estrutura padronizada e mecanística.",
+                "D": "A tecnologia não está relacionada à estrutura organizacional."
+            },
+            "RespostaCorreta": "B"
+        },
+        {
+            "nivel": "média",
+            "Enunciado": "De acordo com os estudos de Joan Woodward, qual das seguintes categorias de tecnologia tem maior probabilidade de estar associada a uma estrutura organizacional padronizada e mecanística?",
+            "Opcoes": {
+                "A": "Produção por unidade.",
+                "B": "Produção em massa.",
+                "C": "Produção por processo.",
+                "D": "Produção customizada."
+            },
+            "RespostaCorreta": "B"
+        },
+        {
+            "nivel": "difícil",
+            "Enunciado": "Qual foi um dos principais resultados observados na reestruturação do The National Cooperative Bank em equipes?",
+            "Opcoes": {
+                "A": "Aumento na demora do processamento de empréstimos.",
+                "B": "Redução na satisfação do cliente.",
+                "C": "Melhoria na relação com o cliente e aumento na eficiência.",
+                "D": "Decréscimo na cooperação dos funcionários."
+            },
+            "RespostaCorreta": "C"
+        },
+        {
+            "nivel": "difícil",
+            "Enunciado": "Quais são alguns dos benefícios potenciais de implementar uma estrutura baseada em equipes em uma organização?",
+            "Opcoes": {
+                "A": "Redução da satisfação do cliente e aumento da demora no processamento de empréstimos.",
+                "B": "Aumento da hierarquia de comando e diminuição da cooperação dos funcionários.",
+                "C": "Melhoria na relação com o cliente, aumento da eficiência e aumento na produtividade.",
+                "D": "Aumento das estruturas funcionais e centralização das tomadas de decisão."
+            },
+            "RespostaCorreta": "C"
+        },
+        {
+            "nivel": "difícil",
+            "Enunciado": "Qual é o principal argumento dos primeiros autores administrativos em relação à cadeia de comando?",
+            "Opcoes": {
+                "a": "Os funcionários não precisam de supervisão.",
+                "b": "Um funcionário deve ter vários superiores.",
+                "c": "A cadeia de comando é uma ideia obsoleta.",
+                "d": "Um funcionário deve ter um único superior."
+            },
+            "RespostaCorreta": "d"
+        },
+        {
+            "nivel": "difícil",
+            "Enunciado": "Por que a aceitação irrestrita da cadeia de comando pode ser problemática em organizações contemporâneas?",
+            "Opcoes": {
+                "a": "Porque a cadeia de comando é sempre ineficaz.",
+                "b": "Porque as organizações contemporâneas são mais simples.",
+                "c": "Porque a cadeia de comando cria flexibilidade.",
+                "d": "Porque pode atrapalhar o desempenho da organização."
+            },
+            "RespostaCorreta": "d"
+        },
+        {
+            "nivel": "difícil",
+            "Enunciado": "Qual foi a abordagem dos primeiros teóricos da administração em relação à amplitude de controle e por que eles a preferem?",
+            "Opcoes": {
+                "a": "Eles preferiam amplitudes de controle maiores, pois acreditavam que isso aumentava a eficiência.",
+                "b": "Eles preferiam amplitudes de controle menores, geralmente não mais de seis trabalhadores, para manter um controle próximo.",
+                "c": "Eles não consideravam a amplitude de controle relevante em organizações.",
+                "d": "Eles preferiam amplitudes de controle variáveis, dependendo da situação."
+            },
+            "RespostaCorreta": "b"
+        },
+        {
+            "nivel": "fácil",
+            "Enunciado": "Qual é a principal diferença entre autoridade de linha e autoridade de assessoria, de acordo com o texto?",
+            "Opcoes": {
+                "A": "A autoridade de linha é encontrada em departamentos de recursos humanos, enquanto a autoridade de assessoria está em produção e vendas.",
+                "B": "A autoridade de linha se aplica aos gerentes que auxiliam na redução das cargas de informação, enquanto a autoridade de assessoria permite que os gerentes tomem decisões sem consulta.",
+                "C": "A autoridade de linha envolve a direção do trabalho de funcionários, enquanto a autoridade de assessoria apoia, auxilia e aconselha os gerentes de linha.",
+                "D": "A autoridade de linha é predominante em organizações maiores, enquanto a autoridade de assessoria é mais comum em organizações menores."
+            },
+            "RespostaCorreta": "C"
+        }
     ]
-}
+}    
