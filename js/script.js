@@ -123,8 +123,8 @@
 	var imgEnemy1 = new Image();
 	imgEnemy1.src = "img/enemy_glad.png";
 	var enemy1 = {
-		x: tileSize * 5,
-		y: tileSize * 5,
+		x: 160,
+		y: 160,
 		width: 32,
 		height: 30,
 		collisionPopupText: "Personagem estático colidido!",
@@ -304,16 +304,15 @@
 			player.srcX,player.srcY,player.width,player.height,
 			player.x,player.y,player.width,player.height
 		);
-		ctx.font = "16px serif";
-		ctx.fillStyle = "white";
-		ctx.drawImage(heartHUD, 5, 5, 12, 12)
-		vidaHUD = ctx.fillText(vida, 20, 15, 48)
-		ctx.restore();
 		for (var i in staticCharacters) {
 			var staticChar = staticCharacters[i];
-			ctx.fillStyle = "red"; // Cor de exemplo para personagens estáticos
 			ctx.drawImage(staticChar.img, staticChar.x, staticChar.y, staticChar.width, staticChar.height);
 		}
+		ctx.restore();
+		ctx.drawImage(heartHUD, 5, 5, 12, 12)
+		ctx.font = "16px serif";
+		ctx.fillStyle = "white";
+		vidaHUD = ctx.fillText(vida, 20, 16)
 	}
 	
 	function loop(){
