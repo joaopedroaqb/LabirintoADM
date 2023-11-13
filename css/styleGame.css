@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.telaJogo {
+    width: 95%;
+    height: 95%;
+}
+
+#modalPopUpPergunta {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
+    position: absolute;
+    height: 10vh;
+    text-align: center; 
+    justify-content: center;
+    background-color: #000000bb;
+    color: white;
+    visibility: hidden;
+
+}

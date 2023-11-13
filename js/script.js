@@ -116,7 +116,16 @@
 		}
 	}
 
-	
+	var staticCharacters = [];
+
+	var enemy1 = {
+		x: tileSize * 5,
+		y: tileSize * 5,
+		width: 32,
+		height: 32,
+		collisionPopupText: "Personagem estático colidido!"
+	};
+	staticCharacters.push(enemy1);
 	var cam = {
 		x: 0,
 		y: 0,
@@ -136,24 +145,29 @@
 		}
 	};
 	
-	function blockRectangle(objA,objB){
-		var distX = (objA.x + objA.width/2) - (objB.x + objB.width/2);
-		var distY = (objA.y + objA.height/2) - (objB.y + objB.height/2);
-		
-		var sumWidth = (objA.width + objB.width)/2;
-		var sumHeight = (objA.height + objB.height)/2;
-		
-		if(Math.abs(distX) < sumWidth && Math.abs(distY) < sumHeight){
+	function blockRectangle(objA, objB) {
+		var distX = (objA.x + objA.width / 2) - (objB.x + objB.width / 2);
+		var distY = (objA.y + objA.height / 2) - (objB.y + objB.height / 2);
+	
+		var sumWidth = (objA.width + objB.width) / 2;
+		var sumHeight = (objA.height + objB.height) / 2;
+	
+		if (Math.abs(distX) < sumWidth && Math.abs(distY) < sumHeight) {
 			var overlapX = sumWidth - Math.abs(distX);
 			var overlapY = sumHeight - Math.abs(distY);
-			
-			if(overlapX > overlapY){
+	
+			if (overlapX > overlapY) {
 				objA.y = distY > 0 ? objA.y + overlapY : objA.y - overlapY;
 			} else {
 				objA.x = distX > 0 ? objA.x + overlapX : objA.x - overlapX;
 			}
+	
+			return true; // Colisão ocorreu
 		}
+	
+		return false; // Sem colisão
 	}
+	
 	
 	window.addEventListener("keydown",keydownHandler,false);
 	window.addEventListener("keyup",keyupHandler,false);
@@ -191,6 +205,15 @@
 			case DOWN:
 				mvDown = false;
 				break;
+		}
+	}
+	function updateStaticCharacters() {
+		for (var i in staticCharacters) {
+			var staticChar = staticCharacters[i];
+	
+			if (blockRectangle(player, staticChar)) {
+				document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
+			}
 		}
 	}
 	
@@ -247,6 +270,7 @@
 		
 		cam.x = Math.max(0,Math.min(T_WIDTH - cam.width,cam.x));
 		cam.y = Math.max(0,Math.min(T_HEIGHT - cam.height,cam.y));
+		updateStaticCharacters();
 	}
 	
 	function render(){
@@ -274,6 +298,11 @@
 			player.x,player.y,player.width,player.height
 		);
 		ctx.restore();
+		for (var i in staticCharacters) {
+			var staticChar = staticCharacters[i];
+			ctx.fillStyle = "red"; // Cor de exemplo para personagens estáticos
+			ctx.drawImage(img, staticChar.x, staticChar.y, staticChar.width, staticChar.height);
+		}
 	}
 	
 	function loop(){
@@ -282,3 +311,7 @@
 		requestAnimationFrame(loop,cnv);
 	}
 }());
+
+function fecharModal() {
+	document.querySelector("#modalPopUpPergunta").style.visibility = 'hidden'
+}
