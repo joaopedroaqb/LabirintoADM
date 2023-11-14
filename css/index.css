@@ -13,7 +13,7 @@ body {
     align-items: center;
 }
 
-.botaoComecar {
+.botoes {
     width: 20vw;
     height: 50px;
     background-color: azure;
@@ -25,15 +25,32 @@ body {
     border: 3px solid rgb(117, 117, 117);
     padding: 0;
     text-decoration: none;
+    user-select: none;
+    cursor: pointer;
     color: black;
+    margin-bottom: 20px;
 }
 
-.botaoComecar img {
+.botoes img {
     width: 40px;
+    padding: 10px;
+    transition: all .2s;
 }
 
-.botaoComecar span {
+.botoes span {
     width: 100%;
     text-align: center;
     font-size: 1.5em;
+}
+
+.botoes:hover img{
+    transform: rotate(45deg);
+}
+
+.botoes:hover span {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #000 0px 0px 5px, #000 0px 0px 10px, #000 0px 0px 25px;
+}
+
+#tituloJogo {
+    width: 50vw;
 }
