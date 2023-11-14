@@ -1,7 +1,7 @@
 {
     "PerguntasPlanejamento": [
         {
-            "nivel": "fácil",
+            "Nivel": "fácil",
             "Enunciado": "Segundo Stoner e Freeman, quantos passos tem o processo formal de planejamento?",
             "Opcoes": {
                 "a": "6 passos",
@@ -12,7 +12,7 @@
             "RespostaCorreta": "b"
         },
         {
-            "nivel": "fácil",
+            "Nivel": "fácil",
             "Enunciado": "Segundo Stoner e Freeman, qual o 4° passo do processo formal de planejamento?",
             "Opcoes": {
                 "a": "Formulação de objetivos",
@@ -23,7 +23,7 @@
             "RespostaCorreta": "d"
         },
         {
-            "nivel": "fácil",
+            "Nivel": "fácil",
             "Enunciado": "A matriz BCG é um modelo de portfólio criado pela Boston Consulting Group. Observe as seguintes afirmativas",
             "Opcoes": {
                 "a": "I - O produto estrela é o produto no qual possui mais investimentos e menos lucratividade",
@@ -35,7 +35,7 @@
             "RespostaCorreta": "c"
         },
         {
-            "nivel": "média",
+            "Nivel": "média",
             "Enunciado": "De acordo com Porter quais são as 5 forças no mercado?",
             "Opcoes": {
                 "a": "As barreiras para entrada no mercado, O poder de barganha dos compradores, O poder de barganha dos fornecedores, A disputa por um produto e A ameaça de produtos industrializados.",
@@ -46,7 +46,7 @@
             "RespostaCorreta": "b"
         },
         {
-            "nivel": "difícil",
+            "Nivel": "difícil",
             "Enunciado": "Qual é a abordagem correta para avaliar a força relativa de uma organização em relação aos seus competidores?",
             "Opcoes": {
                 "a": "Identificar o que a organização faz bem ou mal.",
@@ -57,7 +57,7 @@
             "RespostaCorreta": "b"
         },
         {
-            "nivel": "difícil",
+            "Nivel": "difícil",
             "Enunciado": "Como podem as mudanças no ambiente de mercado representar oportunidades para uma organização?",
             "Opcoes": {
                 "a": "Ameaçando a estabilidade da organização.",
@@ -68,7 +68,7 @@
             "RespostaCorreta": "c"
         },
         {
-            "nivel": "difícil",
+            "Nivel": "difícil",
             "Enunciado": "O que motivou a necessidade de procedimentos formais na coordenação de atividades empresariais, levando à abordagem da formulação de política?",
             "Opcoes": {
                 "a": "A redução das funções da empresa.",
@@ -79,7 +79,7 @@
             "RespostaCorreta": "b"
         },
         {
-            "nivel": "fácil",
+            "Nivel": "fácil",
             "Enunciado": "Como a diferenciação de produtos pode mitigar o poder de barganha dos clientes em uma negociação?",
             "Opcoes": {
                 "a": "Ao oferecer produtos exclusivos e únicos, reduzindo assim a sensibilidade dos clientes aos preços e aumentando a lealdade à marca.",
@@ -90,7 +90,7 @@
             "RespostaCorreta": "a"
         },
         {
-            "nivel": "médio",
+            "Nivel": "médio",
             "Enunciado": "Qual das seguintes afirmações melhor descreve a estratégia de diversificação relacionada em nível corporativo?",
             "Opcoes": {
                 "a": "Diversificação relacionada ocorre quando uma empresa expande seus negócios para indústrias ou mercados não relacionados aos seus produtos ou serviços existentes.",
@@ -101,7 +101,7 @@
             "RespostaCorreta": "b"
         },
         {
-            "nivel": "médio",
+            "Nivel": "médio",
             "Enunciado": "Uma empresa possui um portfólio de produtos que inclui um produto líder de mercado com alta participação de mercado, mas em um mercado de crescimento lento, um produto em ascensão com participação de mercado média em um mercado de crescimento rápido, e um produto com baixa participação de mercado e baixo crescimento no mercado. Qual dos seguintes quadrantes da Matriz BCG representa cada um desses produtos?",
             "Opcoes": {
                 "a": "Produto líder de mercado: Estrela; Produto em ascensão: Vaca Leiteira; Produto com baixa participação de mercado: Ponto de Interrogação.",
@@ -114,7 +114,7 @@
     ],
     "PerguntasOrganizacao": [
         {
-            "nivel": "fácil",
+            "Nivel": "fácil",
             "Enunciado": "Qual é a principal função da cadeia de comando na administração?",
             "Opcoes": {
                 "A": "Facilitar a comunicação interna",
@@ -125,7 +125,7 @@
             "RespostaCorreta": "A"
         },
         {
-            "nivel": "média",
+            "Nivel": "média",
             "Enunciado": "Como o tamanho de uma organização afeta sua estrutura?",
             "Opcoes": {
                 "A": "O tamanho tem um impacto linear, com organizações maiores sendo sempre mais mecanísticas.",
@@ -136,7 +136,7 @@
             "RespostaCorreta": "D"
         },
         {
-            "nivel": "fácil",
+            "Nivel": "fácil",
             "Enunciado": "Como a tecnologia afeta a estrutura organizacional?",
             "Opcoes": {
                 "A": "A tecnologia não tem influência na estrutura organizacional.",
@@ -147,7 +147,7 @@
             "RespostaCorreta": "B"
         },
         {
-            "nivel": "média",
+            "Nivel": "média",
             "Enunciado": "De acordo com os estudos de Joan Woodward, qual das seguintes categorias de tecnologia tem maior probabilidade de estar associada a uma estrutura organizacional padronizada e mecanística?",
             "Opcoes": {
                 "A": "Produção por unidade.",
@@ -158,7 +158,7 @@
             "RespostaCorreta": "B"
         },
         {
-            "nivel": "difícil",
+            "Nivel": "difícil",
             "Enunciado": "Qual foi um dos principais resultados observados na reestruturação do The National Cooperative Bank em equipes?",
             "Opcoes": {
                 "A": "Aumento na demora do processamento de empréstimos.",
@@ -169,7 +169,7 @@
             "RespostaCorreta": "C"
         },
         {
-            "nivel": "difícil",
+            "Nivel": "difícil",
             "Enunciado": "Quais são alguns dos benefícios potenciais de implementar uma estrutura baseada em equipes em uma organização?",
             "Opcoes": {
                 "A": "Redução da satisfação do cliente e aumento da demora no processamento de empréstimos.",
@@ -180,7 +180,7 @@
             "RespostaCorreta": "C"
         },
         {
-            "nivel": "difícil",
+            "Nivel": "difícil",
             "Enunciado": "Qual é o principal argumento dos primeiros autores administrativos em relação à cadeia de comando?",
             "Opcoes": {
                 "a": "Os funcionários não precisam de supervisão.",
@@ -191,7 +191,7 @@
             "RespostaCorreta": "d"
         },
         {
-            "nivel": "difícil",
+            "Nivel": "difícil",
             "Enunciado": "Por que a aceitação irrestrita da cadeia de comando pode ser problemática em organizações contemporâneas?",
             "Opcoes": {
                 "a": "Porque a cadeia de comando é sempre ineficaz.",
@@ -202,7 +202,7 @@
             "RespostaCorreta": "d"
         },
         {
-            "nivel": "difícil",
+            "Nivel": "difícil",
             "Enunciado": "Qual foi a abordagem dos primeiros teóricos da administração em relação à amplitude de controle e por que eles a preferem?",
             "Opcoes": {
                 "a": "Eles preferiam amplitudes de controle maiores, pois acreditavam que isso aumentava a eficiência.",
@@ -213,7 +213,7 @@
             "RespostaCorreta": "b"
         },
         {
-            "nivel": "fácil",
+            "Nivel": "fácil",
             "Enunciado": "Qual é a principal diferença entre autoridade de linha e autoridade de assessoria, de acordo com o texto?",
             "Opcoes": {
                 "A": "A autoridade de linha é encontrada em departamentos de recursos humanos, enquanto a autoridade de assessoria está em produção e vendas.",
@@ -223,5 +223,218 @@
             },
             "RespostaCorreta": "C"
         }
-    ]
+    ],
+    "PerguntasLideranca": [
+        {
+            "Nivel": "difícil",
+            "Enunciado": "Qual das seguintes opções é uma crítica à abordagem das teorias do comportamento de liderança?",
+            "Opcoes": {
+                "A": "A abordagem não é capaz de explicar a liderança eficaz em todas as situações.",
+                "B": "A abordagem não é capaz de explicar a liderança eficaz em todas as organizações.",
+                "C": "A abordagem não é capaz de explicar a liderança eficaz em todos os níveis hierárquicos.",
+                "D": "A abordagem não é capaz de explicar a liderança eficaz em todos os tipos de equipes."
+            },
+            "RespostaCorreta": "A"
+        },
+        {
+            "Nivel": "difícil",
+            "Enunciado": "Qual das seguintes opções é a definição mais precisa de liderança de equipe?",
+            "Opcoes": {
+                "A": "Liderança de equipe é o processo de influenciar e motivar os membros de uma equipe para alcançar um objetivo comum.",
+                "B": "Liderança de equipe é o processo de tomar decisões por conta própria e delegar tarefas aos membros da equipe.",
+                "C": "Liderança de equipe é o processo de criar um ambiente de trabalho positivo e estimulante para os membros da equipe.",
+                "D": "Liderança de equipe é o processo de construir relacionamentos fortes com os membros da equipe e de confiar neles para realizar suas tarefas de forma eficaz."
+            },
+            "RespostaCorreta": "A"
+        },
+        {
+            "Nivel": "fácil",
+            "Enunciado": "A liderança situacional cria uma relação em que:",
+            "Opcoes": {
+                "A": "Os funcionários se adequam ao líder",
+                "B": "O líder se adequa ao estado que a empresa está",
+                "C": "O líder se adequa aos funcionários",
+                "D": "Os funcionários se adequam à empresa"
+            },
+            "RespostaCorreta": "C"
+        },
+        {
+            "Nivel": "médio",
+            "Enunciado": "Quais são as 5 dimensões da confiança?",
+            "Opcoes": {
+                "A": "Integridade, Desistência, Consistência, Lealdade, Abertura",
+                "B": "Integridade, Competência, Impaciência, Organizado, Abertura",
+                "C": "Integridade, Competência, Consistência, Lealdade, Abertura",
+                "D": "Integridade, Competência, Consistência, Lealdade, Fechamento"
+            },
+            "RespostaCorreta": "C"
+        },
+        {
+            "Nivel": "fácil",
+            "Enunciado": "Quais são os 3 principais comportamentos de liderança?",
+            "Opcoes": {
+                "A": "Autocrático, Laissez-faire, Democrático",
+                "B": "Autocrático, Laissez-faire, Ditatorial",
+                "C": "Liberal, Laissez-faire, Democrático",
+                "D": "Autocrático, Laissez-faire, Liberal"
+            },
+            "RespostaCorreta": "A"
+        },
+        {
+            "Nivel": "fácil",
+            "Enunciado": "Qual autor identificou três características pessoais de líderes carismáticos, incluindo confiança extremamente alta e fortes convicções?",
+            "Opcoes": {
+                "A": "Robert House",
+                "B": "Warren Bennis",
+                "C": "Jay Conger",
+                "D": "Rabindra Kanungo"
+            },
+            "RespostaCorreta": "A"
+        },
+        {
+            "Nivel": "média",
+            "Enunciado": "De acordo com Warren Bennis, quais das seguintes competências comuns são encontradas em líderes eficazes nos Estados Unidos?",
+            "Opcoes": {
+                "A": "Habilidade de delegar tarefas",
+                "B": "Uso extensivo de tecnologia",
+                "C": "Visão convincente e senso de propósito",
+                "D": "Uso de táticas de manipulação"
+            },
+            "RespostaCorreta": "C"
+        },
+        {
+            "Nivel": "fácil",
+            "Enunciado": "O que é liderança visionária?",
+            "Opcoes": {
+                "A": "É a habilidade de criar uma visão irrealista do futuro.",
+                "B": "É a habilidade de criar uma visão realista, crível e atraente do futuro para uma organização.",
+                "C": "É a habilidade de liderar sem uma visão clara do futuro.",
+                "D": "É a habilidade de prever eventos futuros com precisão."
+            },
+            "RespostaCorreta": "B"
+        },
+        {
+            "Nivel": "média",
+            "Enunciado": "Qual é a importância da liderança visionária de acordo com o texto?",
+            "Opcoes": {
+                "A": "A liderança visionária é fundamental para promover o carisma dos líderes.",
+                "B": "A liderança visionária é necessária para prever eventos futuros com precisão.",
+                "C": "A liderança visionária ajuda a criar uma visão do futuro que inspira e motiva a organização.",
+                "D": "A liderança visionária é o único meio de garantir o sucesso a longo prazo de uma organização."
+            },
+            "RespostaCorreta": "C"
+        }
+    ],
+        "PerguntaControle": [
+            {
+                "Nivel": "fácil",
+                "Enunciado": "Os tipos de controles são:",
+                "Opcoes": {
+                    "a": "Apenas I está correta",
+                    "b": "Apenas II está correta",
+                    "c": "I e II estão corretas",
+                    "d": "Todas estão corretas"
+                },
+                "RespostaCorreta": "c"
+            },
+            {
+                "Nivel": "difícil",
+                "Enunciado": "Qual das seguintes opções é um exemplo de controle preventivo de alimentação de fluxo?",
+                "Opcoes": {
+                    "A": "Uma empresa de serviços que realiza treinamento para seus funcionários antes de eles começarem a trabalhar.",
+                    "B": "Uma empresa de manufatura que realiza inspeções de qualidade em seus produtos antes de serem enviados para os clientes.",
+                    "C": "Uma empresa de tecnologia que implementa um sistema de segurança para evitar invasões cibernéticas.",
+                    "D": "Uma empresa de varejo que realiza uma pesquisa de satisfação com os clientes após a compra."
+                },
+                "RespostaCorreta": "B"
+            },
+            {
+                "Nivel": "difícil",
+                "Enunciado": "Qual das seguintes opções é a segunda etapa do processo de controle, segundo o livro 'Controle - Robbins e Decenzo'?",
+                "Opcoes": {
+                    "A": "Medir o desempenho real",
+                    "B": "Comparar o desempenho real com o padrão",
+                    "C": "Tomar medidas administrativas para corrigir os desvios ou padrões inadequados",
+                    "D": "Desenvolver padrões de desempenho"
+                },
+                "RespostaCorreta": "B"
+            },
+            {
+                "Nivel": "média",
+                "Enunciado": "Qual das habilidades abaixo NÃO fazem parte da qualidade de um controle?",
+                "Opcoes": {
+                    "a": "II, III",
+                    "b": "I, II e V",
+                    "c": "II e V",
+                    "d": "Todas as alternativas"
+                },
+                "RespostaCorreta": "c"
+            },
+            {
+                "Nivel": "média",
+                "Enunciado": "Um tema muito sensível no controle contemporâneo é a privacidade dos funcionários, qual das ações abaixo pode ocasionar uma demissão?",
+                "Opcoes": {
+                    "a": "Enviar emails corporativos de forma legal e que esteja nos conformes da empresa",
+                    "b": "Utilizar dos telefones da empresa para ligações comerciais",
+                    "c": "Enviar emails privados com temas sensíveis à empresa de forma pessoal",
+                    "d": "Enviar emails fazendo pedidos para fornecedores ou então para confirmação de clientes."
+                },
+                "RespostaCorreta": "c"
+            },
+            {
+                "Nivel": "fácil",
+                "Enunciado": "O controle de entrada é atrelado ...",
+                "Opcoes": {
+                    "a": "A ser preventivo",
+                    "b": "A simultâneo",
+                    "c": "Ao feedback",
+                    "d": "Ao gerenciamento"
+                },
+                "RespostaCorreta": "a"
+            },
+            {
+                "Nivel": "fácil",
+                "Enunciado": "O controle de saída é atrelado ...",
+                "Opcoes": {
+                    "a": "A ser preventivo",
+                    "b": "A simultâneo",
+                    "c": "Ao feedback",
+                    "d": "Ao gerenciamento"
+                },
+                "RespostaCorreta": "c"
+            },
+            {
+                "Nivel": "média",
+                "Enunciado": "Qual das seguintes ações é considerada invasão de privacidade?",
+                "Opcoes": {
+                    "A": "Compartilhar informações pessoais em uma rede social voluntariamente.",
+                    "B": "Acessar o email de outra pessoa sem permissão.",
+                    "C": "Publicar fotos próprias em um site público.",
+                    "D": "Permitir que um amigo leia uma mensagem recebida no seu celular."
+                },
+                "RespostaCorreta": "B"
+            },
+            {
+                "Nivel": "difícil",
+                "Enunciado": "Em contextos organizacionais, a manipulação de medições é uma prática antiética que pode distorcer a avaliação real do desempenho dos funcionários. Considerando a frase fornecida, qual das seguintes alternativas representa a ação mais apropriada para combater essa manipulação?",
+                "Opcoes": {
+                    "A": "Implementar um sistema de recompensas baseado exclusivamente nas medições para incentivar a precisão.",
+                    "B": "Realizar auditorias regulares e variar as métricas de desempenho para evitar padrões previsíveis de manipulação.",
+                    "C": "Ignorar a manipulação se os resultados gerais da empresa não forem afetados negativamente.",
+                    "D": "Aumentar a pressão sobre os funcionários para atender às metas estabelecidas, desencorajando assim a manipulação."
+                },
+                "RespostaCorreta": "B"
+            },
+            {
+                "Nivel": "fácil",
+                "Enunciado": "Qual o próximo passo após a identificação da causa de variação do desempenho?",
+                "Opcoes": {
+                    "a": "Revisão de padrão",
+                    "b": "Corrigir o desempenho",
+                    "c": "Não fazer nada",
+                    "d": "Comparar o desempenho atual com o padrão"
+                },
+                "RespostaCorreta": "b"
+            }
+        ]
 }
