@@ -150,6 +150,7 @@
 		}
 	};
 	
+	
 	function blockRectangle(objA, objB) {
 		var distX = (objA.x + objA.width / 2) - (objB.x + objB.width / 2);
 		var distY = (objA.y + objA.height / 2) - (objB.y + objB.height / 2);
