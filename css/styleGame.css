@@ -16,13 +16,16 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 20px 0;
     position: absolute;
-    height: 10vh;
+    height: 100%;
     text-align: center; 
     justify-content: center;
-    background-color: #000000bb;
     color: white;
     visibility: hidden;
+}
 
+.pergunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
