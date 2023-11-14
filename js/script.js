@@ -1,7 +1,9 @@
-(function(){
+(async function(){
 	var cnv = document.querySelector("canvas");
 	var ctx = cnv.getContext("2d");
-	
+	const res = await fetch("../package.json");
+	const perguntas = await res.json();
+	console.log(perguntas)
 	var WIDTH = cnv.width, HEIGHT = cnv.height;
 	
 	var LEFT = 37, UP = 38, RIGHT = 39, DOWN = 40;
@@ -118,19 +120,16 @@
 			}
 		}
 	}
-
+	// Objetos
 	var staticCharacters = [];
-	var imgEnemy1 = new Image();
-	imgEnemy1.src = "img/enemy_glad.png";
-	var enemy1 = {
-		x: 160,
-		y: 160,
-		width: 32,
-		height: 30,
-		collisionPopupText: "Personagem estático colidido!",
-		img: imgEnemy1
-	};
-	staticCharacters.push(enemy1);
+	var gladiador = new Image();
+	gladiador.src = "img/enemy_glad.png";
+	var chest = new Image();
+	chest.src = "img/chest_closed.png";
+	criarObjeto(tileSize*5,tileSize*5,32,30,3,3,gladiador)
+	criarObjeto(tileSize*18,tileSize,32,30,1,1,chest)
+	criarObjeto(tileSize*10,tileSize*20,32,30,1,2,chest)
+	criarObjeto(tileSize*5,tileSize*3,32,30,1,2,chest)
 	var cam = {
 		x: 0,
 		y: 0,
@@ -151,6 +150,19 @@
 	};
 	
 	
+	function criarObjeto(xObject, yObject, widthObject, heightObject, nivelQuestaoObject, tipoQuestaoObject, imgObject) {
+		objeto = {
+			x: xObject,
+			y: yObject,
+			width: widthObject,
+			height: heightObject,
+			nivelQuestao: nivelQuestaoObject,
+			tipoQuestao: tipoQuestaoObject,
+			img: imgObject
+		}
+		staticCharacters.push(objeto);
+	}
+
 	function blockRectangle(objA, objB) {
 		var distX = (objA.x + objA.width / 2) - (objB.x + objB.width / 2);
 		var distY = (objA.y + objA.height / 2) - (objB.y + objB.height / 2);
@@ -218,7 +230,15 @@
 			var staticChar = staticCharacters[i];
 	
 			if (blockRectangle(player, staticChar)) {
-				document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
+				if (staticChar.tipoQuestao == 2) {	
+					numeroQuestao = Math.floor(Math.random() * 9)
+					document.querySelector(".enunciadoPergunta").innerHTML = `
+						<span class="respostaA">${perguntas.PerguntasOrganizacao[numeroQuestao]['Enunciado']}</span>
+						<span class="respostaB">${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['a']}</span>
+						<span class="respostaC">${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['b']}</span>
+					`
+					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
+				}
 			}
 		}
 	}
@@ -314,6 +334,10 @@
 		ctx.font = "16px serif";
 		ctx.fillStyle = "white";
 		vidaHUD = ctx.fillText(vida, 20, 16)
+		ctx.drawImage(heartHUD, 5, 20, 12, 12)
+		ctx.font = "16px serif";
+		ctx.fillStyle = "white";
+		vidaHUD = ctx.fillText(armour, 20, 32)
 	}
 	
 	function loop(){
