@@ -436,5 +436,128 @@
                 },
                 "RespostaCorreta": "B"
             }
-        ]
+        ],
+        "PerguntasAreasFuncionais": [
+            {
+                "Nivel": "fácil",
+                "Enunciado": "Quais são as quatro funções presentes em praticamente todas as organizações a partir de um determinado porte?",
+                "Opcoes": {
+                    "A": "Marketing, gestão de pessoas, finanças e vendas",
+                    "B": "Marketing, gestão de pessoas, finanças e operações",
+                    "C": "Vendas, gestão de pessoas, finanças e operações",
+                    "D": "Marketing, gestão de produtos, finanças e operações"
+                },
+                "RespostaCorreta": "A"
+            },
+            {
+                "Nivel": "fácil",
+                "Enunciado": "Qual é a principal diferença entre administração multifuncional e administração funcional em uma organização?",
+                "Opcoes": {
+                    "A": "A administração funcional é exclusiva para níveis hierárquicos mais altos, enquanto a administração multifuncional se concentra nos níveis mais baixos da hierarquia.",
+                    "B": "A administração multifuncional é focada em tarefas operacionais, enquanto a administração funcional lida apenas com questões estratégicas.",
+                    "C": "A administração multifuncional se concentra em conhecimentos gerais de todas as áreas da empresa, enquanto a administração funcional se especializa em uma área específica.",
+                    "D": "A administração funcional se relaciona com a gestão de pessoas, enquanto a administração multifuncional lida com finanças e marketing."
+                },
+                "RespostaCorreta": "C"
+            },
+            {
+                "Nivel": "fácil",
+                "Enunciado": "Qual é o principal objetivo das decisões de investimento tomadas pelo administrador financeiro?",
+                "Opcoes": {
+                    "A": "Maximizar o lucro a curto prazo.",
+                    "B": "Criar valor para os acionistas.",
+                    "C": "Minimizar os custos operacionais.",
+                    "D": "Aumentar a participação de mercado."
+                },
+                "RespostaCorreta": "B"
+            },
+            {
+                "Nivel": "fácil",
+                "Enunciado": "Qual é o principal objetivo das normas IFRS (International Financial Reporting Standards)?",
+                "Opcoes": {
+                    "A": "Padronizar as demonstrações financeiras apenas para o segmento especializado.",
+                    "B": "Harmonizar as demonstrações financeiras elaboradas pelas empresas em diferentes países.",
+                    "C": "Aumentar a complexidade das informações contábeis para os contadores.",
+                    "D": "Limitar o acesso às informações financeiras para interessados externos."
+                },
+                "RespostaCorreta": "B"
+            },
+            {
+                "Nivel": "média",
+                "Enunciado": "Qual é o conjunto de quatro componentes definido por Jerome McCarthy que merecem atenção para que as organizações alcancem seus objetivos de marketing?",
+                "Opcoes": {
+                    "A": "Mix de Inovação, Promoção, Preço e Praça.",
+                    "B": "Os Quatro Ps: Produto, Preço, Praça e Promoção.",
+                    "C": "Estratégias Principais, Precificação, Posicionamento e Publicidade.",
+                    "D": "Abordagem de Valor, Comportamento do Consumidor, Canais de Distribuição e Estratégias de Vendas."
+                },
+                "RespostaCorreta": "B"
+            },
+            {
+                "Nivel": "média",
+                "Enunciado": "Qual das seguintes afirmações melhor descreve a evolução da função de operações ao longo do tempo?",
+                "Opcoes": {
+                    "A": "No modelo de produção em massa de Henry Ford, a eficiência era baseada na diversificação dos produtos e na redução de estoques.",
+                    "B": "O surgimento da ISO 14000 levou as empresas a focarem principalmente na maximização do lucro, negligenciando os impactos ambientais.",
+                    "C": "A função de operações atualmente deve considerar aspectos econômicos, ambientais e sociais para alcançar a eficiência na produção.",
+                    "D": "O modelo de integração vertical é amplamente adotado pelas organizações modernas, permitindo uma produção mais ágil e diversificada."
+                },
+                "RespostaCorreta": "C"
+            },
+            {
+                "Nivel": "média",
+                "Enunciado": "De acordo com as tendências apontadas pelo especialista Hugo T. Yoshida Yoshizaki na área de produção no Brasil no início do século XXI, qual aspecto NÃO é destacado como uma das tendências?",
+                "Opcoes": {
+                    "A": "Aumento da preocupação com resíduos do processo produtivo e destino de produtos obsoletos.",
+                    "B": "Rápida evolução tecnológica dos materiais e sua aplicação em novos produtos.",
+                    "C": "Ampliação da visão sistêmica da cadeia produtiva e seus impactos ambientais.",
+                    "D": "Diminuição da preocupação com a sustentabilidade e reciclagem na produção."
+                },
+                "RespostaCorreta": "D"
+            },
+            {
+                "Nivel": "difícil",
+                "Enunciado": "Considerando a evolução da função de gestão de pessoas ao longo do tempo no Brasil e os desafios enfrentados pelas empresas em relação à modernização e à humanização, qual das seguintes afirmações melhor reflete a situação atual?",
+                "Opcoes": {
+                    "A": "A gestão de pessoas no Brasil ainda enfrenta desafios de modernização e humanização, com algumas empresas avançando nesses aspectos, enquanto outras ainda mantêm práticas ultrapassadas.",
+                    "B": "A gestão de pessoas está totalmente alinhada com os modernos modelos de administração em todas as empresas brasileiras, eliminando completamente as práticas ultrapassadas.",
+                    "C": "A modernização e a humanização na gestão de pessoas são desafios universais que não impactam a realidade das empresas no Brasil.",
+                    "D": "O Brasil conseguiu superar completamente as práticas antigas de gestão de pessoas, estabelecendo um novo padrão de eficiência e modernização em todas as suas empresas."
+                },
+                "RespostaCorreta": "A"
+            },
+            {
+                "Nivel": "difícil",
+                "Enunciado": "Considerando as tendências apontadas pelo especialista Lindolfo Galvão de Albuquerque em relação à área de gestão de pessoas no Brasil no início do século XXI, qual das seguintes afirmações está correta?",
+                "Opcoes": {
+                    "A": "A gestão de pessoas foca principalmente na aplicação de métodos tradicionais de recrutamento e seleção, minimizando a importância do alinhamento estratégico com os objetivos organizacionais.",
+                    "B": "As novas práticas de gestão de pessoas não consideram a gestão da cultura e as mudanças organizacionais como parte integrante do seu escopo de atuação.",
+                    "C": "A avaliação do impacto da gestão de recursos humanos no negócio da empresa é um dos processos importantes na área de gestão de pessoas atualmente.",
+                    "D": "O uso exclusivo de benefícios fixos é a principal tendência na gestão de compensação de desempenho, sem relação com as competências individuais."
+                },
+                "RespostaCorreta": "C"
+            },
+            {
+                "Nivel": "difícil",
+                "Enunciado": "Para manter o equilíbrio entre as funções organizacionais, a abordagem do Balanced Scorecard (BSC) é eficaz porque:",
+                "Opcoes": {
+                    "A": "Auxilia os gestores a terem uma visão ampla da organização e a compreenderem as interligações existentes entre as diversas funções.",
+                    "B": "Oferece uma solução única e pontual para os problemas financeiros das empresas.",
+                    "C": "Prioriza exclusivamente a área de recursos humanos em detrimento das outras áreas.",
+                    "D": "Limita-se à avaliação financeira, ignorando aspectos operacionais e comerciais das empresas."
+                },
+                "RespostaCorreta": "A"
+            },
+            {
+                "Nivel": "fácil",
+                "Enunciado": "A melhor frase que se encaixa sobre funções organizacionais é:",
+                "Opcoes": {
+                    "A": "Quando uma função não funciona as outras funciona normalmente.",
+                    "B": "Quando uma função não funciona as outras também não vão funcionar.",
+                    "C": "Quando todas funções funciona as outras também não vão funcionar.",
+                    "D": "Quando todas funções não funciona as outras também vão funcionar."
+                },
+                "RespostaCorreta": "B"  
+            }
+        ]        
 }
