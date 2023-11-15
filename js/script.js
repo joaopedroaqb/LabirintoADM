@@ -234,8 +234,8 @@
 					numeroQuestao = Math.floor(Math.random() * 9)
 					document.querySelector(".pergunta").innerHTML = `
 						<span class="respostaA">${perguntas.PerguntasOrganizacao[numeroQuestao]['Enunciado']}</span>
-						<span class="respostaB">${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['a']}</span>
-						<span class="respostaC">${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['b']}</span>
+						<span class="respostaB">${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostaC">${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 				}
