@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Ethno";
+    src: url("../fonts/ethnocentricrg.otf");
+}
+
 body {
     background-image: url("../img/wallpaper_inicio.jpg");
     padding: 0;
@@ -11,6 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Ethno;
 }
 
 .botoes {

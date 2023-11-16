@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Ethno";
+    src: url("../fonts/ethnocentricrg.otf");
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    font-family: Ethno;
 }
 .telaJogo {
     width: 100%;
@@ -19,7 +25,7 @@ body {
     position: absolute;
     height: 100%;
     text-align: center; 
-    justify-content: center;
+    justify-content: flex-end;
     color: white;
     visibility: hidden;
 }
@@ -28,4 +34,26 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: #0000ff9f;
+    border: 2px solid white;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.respostas {
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.setas_pergunta {
+    width: 1rem;
+    padding: 0 5px;
+    visibility: hidden;    
+}
+
+.respostas:hover .setas_pergunta{
+    visibility: visible;
 }

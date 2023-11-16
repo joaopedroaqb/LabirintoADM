@@ -3,7 +3,6 @@
 	var ctx = cnv.getContext("2d");
 	const res = await fetch("../package.json");
 	const perguntas = await res.json();
-	console.log(perguntas)
 	var WIDTH = cnv.width, HEIGHT = cnv.height;
 	
 	var LEFT = 37, UP = 38, RIGHT = 39, DOWN = 40;
@@ -13,7 +12,7 @@
 	var tileSrcSize = 96;
 	var vida = 10
 	var armour = 10 
-	var dano = 2
+	var dano = 10
 	var img = new Image();
 		img.src = "img/img.png";
 		img.addEventListener("load",function(){
@@ -22,7 +21,11 @@
 	
 	var walls = [];
 	var heartHUD = new Image();
-	heartHUD.src = "img/heart.png";
+	heartHUD.src = "img/HeartFull.png";
+	var shieldHUD = new Image();
+	shieldHUD.src = "img/ShieldLargeT2.png";
+	var swordHUD = new Image();
+	swordHUD.src = "img/SwordT2.png";
 	var player = {
 		x: tileSize + 2,
 		y: tileSize + 2,
@@ -126,10 +129,10 @@
 	gladiador.src = "img/enemy_glad.png";
 	var chest = new Image();
 	chest.src = "img/chest_closed.png";
-	criarObjeto(tileSize*5,tileSize*5,32,30,3,3,gladiador)
-	criarObjeto(tileSize*18,tileSize,32,30,1,1,chest)
-	criarObjeto(tileSize*10,tileSize*20,32,30,1,2,chest)
-	criarObjeto(tileSize*5,tileSize*3,32,30,1,2,chest)
+	criarObjeto(tileSize*5,tileSize*5,32,30,3,3,gladiador,false)
+	criarObjeto(tileSize*18,tileSize,32,30,1,2,chest, false)
+	criarObjeto(tileSize*10,tileSize*20,32,30,1,2,chest, false)
+	criarObjeto(tileSize*5,tileSize*3,32,30,1,2,chest, false)
 	var cam = {
 		x: 0,
 		y: 0,
@@ -150,7 +153,7 @@
 	};
 	
 	
-	function criarObjeto(xObject, yObject, widthObject, heightObject, nivelQuestaoObject, tipoQuestaoObject, imgObject) {
+	function criarObjeto(xObject, yObject, widthObject, heightObject, nivelQuestaoObject, tipoQuestaoObject, imgObject, feitoObjeto) {
 		objeto = {
 			x: xObject,
 			y: yObject,
@@ -158,9 +161,13 @@
 			height: heightObject,
 			nivelQuestao: nivelQuestaoObject,
 			tipoQuestao: tipoQuestaoObject,
+			feito: feitoObjeto,
 			img: imgObject
 		}
 		staticCharacters.push(objeto);
+	}
+	function removerObjeto(numeroObjeto) {
+		staticCharacters.splice(numeroObjeto, 1)
 	}
 
 	function blockRectangle(objA, objB) {
@@ -226,23 +233,49 @@
 		}
 	}
 	function updateStaticCharacters() {
-		for (var i in staticCharacters) {
+		for (var i = 0; i < staticCharacters.length; i++) {
 			var staticChar = staticCharacters[i];
-	
 			if (blockRectangle(player, staticChar)) {
-				if (staticChar.tipoQuestao == 2) {	
+				numeroObjeto = staticCharacters.indexOf(staticChar)
+				if (staticChar.tipoQuestao == 2) {
 					numeroQuestao = Math.floor(Math.random() * 9)
 					document.querySelector(".pergunta").innerHTML = `
-						<span class="respostaA">${perguntas.PerguntasOrganizacao[numeroQuestao]['Enunciado']}</span>
-						<span class="respostaB">${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostaC">${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="enunciado">${perguntas.PerguntasOrganizacao[numeroQuestao]['Enunciado']}</span>
+						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
+					correto = false
+					document.querySelector("#respostaA").addEventListener("click", () => {
+						correto = "A" == perguntas.PerguntasOrganizacao[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : false
+					})
+					document.querySelector("#respostaB").addEventListener("click", () => {
+						correto = "B" == perguntas.PerguntasOrganizacao[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : false
+					})
+					document.querySelector("#respostaC").addEventListener("click", () => {
+						correto = "C" == perguntas.PerguntasOrganizacao[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : false
+					})
+					document.querySelector("#respostaD").addEventListener("click", () => {
+						correto = "D" == perguntas.PerguntasOrganizacao[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : false
+					})
 				}
 			}
 		}
 	}
 	
+	function respostaCorreta(tipoQuestao, nivelQuestao, questao, numeroObjeto) {
+		document.querySelector("#modalPopUpPergunta").style.visibility = 'hidden'
+		vida += 1
+		removerObjeto(numeroObjeto)
+		removerQuestao(questao)
+	}
+
+	function removerQuestao(numeroQuestao) {
+		
+	}
+
     //Ajuste de orientação
 	function update(){
 		if (document.querySelector("#modalPopUpPergunta").style.visibility != 'visible') {
@@ -330,14 +363,14 @@
 			ctx.drawImage(staticChar.img, staticChar.x, staticChar.y, staticChar.width, staticChar.height);
 		}
 		ctx.restore();
-		ctx.drawImage(heartHUD, 5, 5, 12, 12)
-		ctx.font = "16px serif";
+		ctx.drawImage(heartHUD, 2, 5, 24,24)
+		ctx.font = "14px Ethno";
 		ctx.fillStyle = "white";
-		vidaHUD = ctx.fillText(vida, 20, 16)
-		ctx.drawImage(heartHUD, 5, 20, 12, 12)
-		ctx.font = "16px serif";
-		ctx.fillStyle = "white";
-		vidaHUD = ctx.fillText(armour, 20, 32)
+		vidaHUD = ctx.fillText(vida, 25, 23)
+		ctx.drawImage(shieldHUD, 2, 25, 24,24)
+		armaduraHUD = ctx.fillText(armour, 25, 43)
+		ctx.drawImage(swordHUD, 2, 50, 24,24)
+		danoHUD = ctx.fillText(dano, 25, 66)
 	}
 	
 	function loop(){
