@@ -239,10 +239,6 @@
 				numeroObjeto = staticCharacters.indexOf(staticChar)
 				if (staticChar.tipoQuestao == 2) {
 					numeroQuestao = Math.floor(Math.random() * perguntas.PerguntasOrganizacao.length)
-					niveis = ['fácil', 'média', 'difícil']
-					while (niveis[staticChar.nivelQuestao] != perguntas.PerguntasOrganizacao[numeroQuestao]['Nivel']) {
-						numeroQuestao = Math.floor(Math.random() * perguntas.PerguntasOrganizacao.length)
-					}
 					document.querySelector(".pergunta").innerHTML = `
 						<span class="enunciado">${perguntas.PerguntasOrganizacao[numeroQuestao]['Enunciado']}</span>
 						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
@@ -264,6 +260,29 @@
 					document.querySelector("#respostaD").addEventListener("click", () => {
 						correto = "D" == perguntas.PerguntasOrganizacao[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : respostaErrada(staticChar.tipoQuestao, staticChar.nivelQuestao)
 					})
+				} else if (staticChar.tipoQuestao == 3) {
+					numeroQuestao = Math.floor(Math.random() * perguntas.PerguntasPlanejamento.length)
+					document.querySelector(".pergunta").innerHTML = `
+						<span class="enunciado">${perguntas.PerguntasPlanejamento[numeroQuestao]['Enunciado']}</span>
+						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasPlanejamento[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasPlanejamento[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasPlanejamento[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasPlanejamento[numeroQuestao]['Opcoes']['D']}</span>
+					`
+					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
+					correto = false
+					document.querySelector("#respostaA").addEventListener("click", () => {
+						correto = "A" == perguntas.PerguntasPlanejamento[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : respostaErrada(staticChar.tipoQuestao, staticChar.nivelQuestao)
+					})
+					document.querySelector("#respostaB").addEventListener("click", () => {
+						correto = "B" == perguntas.PerguntasPlanejamento[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : respostaErrada(staticChar.tipoQuestao, staticChar.nivelQuestao)
+					})
+					document.querySelector("#respostaC").addEventListener("click", () => {
+						correto = "C" == perguntas.PerguntasPlanejamento[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : respostaErrada(staticChar.tipoQuestao, staticChar.nivelQuestao)
+					})
+					document.querySelector("#respostaD").addEventListener("click", () => {
+						correto = "D" == perguntas.PerguntasPlanejamento[numeroQuestao]['RespostaCorreta'] ? respostaCorreta(staticChar.tipoQuestao, staticChar.nivelQuestao, numeroQuestao, numeroObjeto) : respostaErrada(staticChar.tipoQuestao, staticChar.nivelQuestao)
+					})
 				}
 			}
 		}
@@ -271,6 +290,7 @@
 	
 	function respostaErrada(tipoQuestao, nivelQuestao) {
 		document.querySelector("#modalPopUpPergunta").style.visibility = 'hidden'
+		document.querySelector(".pergunta").innerHTML = ''
 		if (tipoQuestao == 2) {
 			vida -= 1
 		}
