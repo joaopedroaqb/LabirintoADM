@@ -290,18 +290,28 @@
 	
 	function respostaErrada(tipoQuestao, nivelQuestao) {
 		document.querySelector("#modalPopUpPergunta").style.visibility = 'hidden'
-		document.querySelector(".pergunta").innerHTML = ''
+		document.querySelector("#modalErrou").style.visibility = 'visible'
 		if (tipoQuestao == 2) {
 			vida -= 1
+			document.querySelector("#errosSpan").innerHTML = `1 de Vida`
 		}
+		verificaVida()
 	}
 
 	function respostaCorreta(tipoQuestao, nivelQuestao, questao, numeroObjeto) {
 		document.querySelector("#modalPopUpPergunta").style.visibility = 'hidden'
-		if (tipoQuestao == 2) {
-			vida += (nivelQuestao*5)
-		}
-		console.log(nivelQuestao)
+		document.querySelector("#modalAcertou").style.visibility = 'visible'
+		switch (tipoQuestao) {
+			case 1:
+				document.querySelector("#ganhosSpan").innerHTML = `${nivelQuestao*5} de Vida`
+				vida += (nivelQuestao*5)
+			case 2:
+				document.querySelector("#ganhosSpan").innerHTML = `${nivelQuestao*5} de Dano`
+				dano += (nivelQuestao*5)
+			case 3:
+				document.querySelector("#ganhosSpan").innerHTML = `${nivelQuestao*5} de Armadura`
+				dano += (nivelQuestao*5)
+		}  
 		removerObjeto(numeroObjeto)
 		removerQuestao(questao)
 	}
@@ -312,7 +322,7 @@
 
     //Ajuste de orientação
 	function update(){
-		if (document.querySelector("#modalPopUpPergunta").style.visibility != 'visible') {
+		if ((document.querySelector("#gameOver").style.visibility != 'visible') && (document.querySelector("#modalPopUpPergunta").style.visibility != 'visible') && (document.querySelector("#modalErrou").style.visibility != 'visible') && (document.querySelector("#modalAcertou").style.visibility != 'visible')) {
 			if(mvLeft && !mvRight){
 				player.x -= player.speed;
 				player.srcY = tileSrcSize + player.height * 2;
@@ -407,6 +417,12 @@
 		danoHUD = ctx.fillText(dano, 25, 66)
 	}
 	
+	function verificaVida() {
+		if(vida <= 0) {
+			document.querySelector("#gameOver").style.visibility = 'visible'
+		}
+	}
+
 	function loop(){
 		update();
 		render();
@@ -416,4 +432,10 @@
 
 function fecharModal() {
 	document.querySelector("#modalPopUpPergunta").style.visibility = 'hidden'
+}
+function fecharModalErrou() {
+	document.querySelector("#modalErrou").style.visibility = 'hidden'
+}
+function fecharModalAcertou() {
+	document.querySelector("#modalAcertou").style.visibility = 'hidden'
 }

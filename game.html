@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Labirinto ADM</title>
-    <link rel="stylesheet" href="css/styleGame.css">
-</head>
-<body>
-<canvas class="telaJogo" width="640" height="640"></canvas>
-<div id="modalPopUpPergunta">
-    <div class="pergunta"></div>
-</div>
-<div class="modalPerdeu">
-    
-</div>
-<script src="js/script.js"></script>
-
-</body>
+    <link rel="stylesheet" href="css/styleGame.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <canvas class="telaJogo" width="640" height="640"></canvas>
+    <div id="modalPopUpPergunta">
+      <div class="pergunta"></div>
+    </div>
+    <div id="modalAcertou">
+      <span>Você acertou a pergunta!</span>
+      <span>Ganhaste: </span>
+      <span id="ganhosSpan"></span>
+      <img
+        src="./img/X.png"
+        class="closeModalButton"
+        onclick="fecharModalAcertou()"
+      />
+    </div>
+    <div id="modalErrou">
+      <span>Você errou a pergunta!</span>
+      <span>Perdeste: </span>
+      <span id="errosSpan"></span>
+      <img
+        src="./img/X.png"
+        class="closeModalButton"
+        onclick="fecharModalErrou()"
+      />
+    </div>
+    <div id="gameOver">
+        <H1>GAME</H1>
+        <H1>OVER</H1>
+        <div class="buttonsGO">
+            <a class="botoes" href="game.html"><img src="./img/espada.png">TENTAR NOVAMENTE</a>
+            <a class="botoes" href="index.html"><img src="./img/espada.png">SAIR</a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
