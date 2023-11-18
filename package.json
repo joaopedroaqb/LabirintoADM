@@ -81,7 +81,7 @@
             "RespostaCorreta": "C"
         }
     ],
-    "PerguntasFaceisLideraca": [
+    "PerguntasFaceisLideranca": [
         {
             "Nivel": "fácil",
             "Enunciado": "A liderança situacional cria uma relação em que:",
@@ -545,7 +545,7 @@
             "RespostaCorreta": "B"
           }
     ],
-    "PerguntasAreasFuncionais":[
+    "PerguntasDificeisAreasFunc":[
         {
             "Nivel": "difícil",
             "Enunciado": "Considerando a evolução da função de gestão de pessoas ao longo do tempo no Brasil e os desafios enfrentados pelas empresas em relação à modernização e à humanização, qual das seguintes afirmações melhor reflete a situação atual?",
