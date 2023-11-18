@@ -63,8 +63,8 @@ body {
     flex-direction: column;
     position: absolute;
     text-align: center; 
-    justify-content: flex-end;
-    align-self: flex-end;
+    justify-content: center;
+    align-self: center;
     color: black;
     background-color: #66ff009f;
     border: 2px solid black;
@@ -78,8 +78,8 @@ body {
     flex-direction: column;
     position: absolute;
     text-align: center; 
-    justify-content: flex-end;
-    align-self: flex-end;
+    justify-content: center;
+    align-self: center;
     color: white;
     background-color: #ff0000;
     border: 2px solid white;
