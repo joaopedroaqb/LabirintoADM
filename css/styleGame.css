@@ -12,6 +12,7 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: Ethno;
+    background-color: black;
 }
 .telaJogo {
     width: 100%;
@@ -34,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     background-color: #0000ff9f;
     border: 2px solid white;
     padding: 10px 0;
@@ -45,7 +47,7 @@ body {
 .respostas {
     cursor: pointer;
     user-select: none;
-    
+    width: 70vw;
 }
 
 .setas_pergunta {
@@ -117,4 +119,51 @@ body {
 
 #gameOver h1 {
     font-size: 4em;
+}
+
+#winScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../img/gameOverBG.jpg");
+    background-size: contain;
+    color: white;
+    visibility: hidden; 
+}
+
+.buttonsW {
+    display: flex;
+    margin: 20px 0;
+    width: 70vw;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.personagemPergunta {
+    width: 10vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+#voltarDepois {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center; 
+    justify-content: flex-end;
+    color: white;
+    visibility: hidden;
+    align-items: center;
+    background-color: #ff00006c;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
 }

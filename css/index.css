@@ -3,22 +3,6 @@
     src: url("../fonts/ethnocentricrg.otf");
 }
 
-body {
-    background-image: url("../img/wallpaper_inicio.jpg");
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Ethno;
-}
-
 .botoes {
     width: 20vw;
     height: 50px;

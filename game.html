@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Labirinto ADM</title>
-    <link rel="stylesheet" href="css/styleGame.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/styleGame.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -43,6 +43,26 @@
             <a class="botoes" href="game.html"><img src="./img/espada.png">TENTAR NOVAMENTE</a>
             <a class="botoes" href="index.html"><img src="./img/espada.png">SAIR</a>
         </div>
+    </div>
+    <div id="winScreen">
+        <H1>PARABÉNS</H1>
+        <span>VOCÊ CONCLUIU NOSSO LABIRINTO COM SUCESSO!</span>
+        <div class="buttonsW">
+            <a class="botoes" href="game.html"><img src="./img/espada.png">JOGAR NOVAMENTE</a>
+            <a class="botoes" href="index.html"><img src="./img/espada.png">SAIR</a>
+        </div>
+    </div>
+    <div id="voltarDepois">
+      <span>Você ainda não possui todos os requisitos para batalhar com o Boss Final</span>
+      <span>Batalhe e abra mais baús para conseguir</span>
+      <span>35 de Vida</span>
+      <span>40 de Armadura</span>
+      <span>40 de Dano</span>
+      <img
+        src="./img/X.png"
+        class="closeModalButton"
+        onclick="fecharModalVoltarDepois()"
+      />
     </div>
     <script src="js/script.js"></script>
   </body>
