@@ -752,20 +752,24 @@
 		// Limpa o canvas
 		ctx.clearRect(0, 0, WIDTH, HEIGHT);
 	
+		// Aplica a tradução para seguir o jogador
+		ctx.translate(-cam.x, -cam.y);
+	
+		
+	
 		// Desenha o campo de visão circular ao redor do jogador
 		ctx.save();
 		ctx.beginPath();
 		ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 50, 0, 2 * Math.PI);
 		ctx.clip();
 		ctx.closePath();
-	
 		// Desenha o labirinto
 		for (var row in maze) {
 			for (var column in maze[row]) {
 				var tile = maze[row][column];
 				var x = column * tileSize;
 				var y = row * tileSize;
-	
+
 				ctx.drawImage(
 					img,
 					tile * tileSrcSize, 0, tileSrcSize, tileSrcSize,
@@ -773,9 +777,6 @@
 				);
 			}
 		}
-	
-		ctx.restore();
-	
 		// Desenha os personagens apenas se estiverem dentro do campo de visão circular
 		for (var i in staticCharacters) {
 			var staticChar = staticCharacters[i];
@@ -783,10 +784,12 @@
 			var centerY = player.y + player.height / 2;
 			var distance = Math.sqrt(Math.pow(centerX - (staticChar.x + staticChar.width / 2), 2) + Math.pow(centerY - (staticChar.y + staticChar.height / 2), 2));
 	
-			if (distance < 45) { // Ajuste o raio conforme necessário
+			if (distance < 50) { // Ajuste o raio conforme necessário
 				ctx.drawImage(staticChar.img, staticChar.x, staticChar.y, staticChar.width, staticChar.height);
 			}
 		}
+	
+		ctx.restore();
 	
 		// Desenha o jogador
 		ctx.drawImage(
@@ -795,6 +798,9 @@
 			player.x, player.y, player.width, player.height
 		);
 	
+		// Reseta a tradução para evitar efeitos indesejados
+		ctx.translate(cam.x, cam.y);
+		
 		// Desenha o HUD
 		ctx.drawImage(heartHUD, 2, 5, 24, 24);
 		ctx.font = "14px Ethno";
@@ -805,7 +811,6 @@
 		ctx.drawImage(swordHUD, 2, 50, 24, 24);
 		danoHUD = ctx.fillText(dano, 25, 66);
 	}
-	
 	
 	function verificaVida() {
 		if(vida <= 0) {
