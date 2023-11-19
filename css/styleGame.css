@@ -13,6 +13,7 @@ body {
     width: 100vw;
     font-family: Ethno;
     background-color: black;
+    background-image: none;
 }
 .telaJogo {
     width: 100%;

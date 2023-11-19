@@ -3,6 +3,22 @@
     src: url("../fonts/ethnocentricrg.otf");
 }
 
+        
+body {
+    background-image: url("../img/wallpaper_inicio.jpg");
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Ethno;
+}
 .botoes {
     width: 20vw;
     height: 50px;
@@ -30,7 +46,7 @@
 .botoes span {
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .botoes:hover img{
@@ -43,4 +59,51 @@
 
 #tituloJogo {
     width: 50vw;
+}
+
+/* Sobre */
+.container {
+    background-color: #0000005d;
+    border: 2px solid rgba(255, 255, 255, 0.63);
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.containerDevs {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cardDev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 200px;
+    transition: transform .5s;
+}
+
+.cardDev strong {
+    text-shadow: #000 0px 0px 5px, #000 0px 0px 10px, #000 0px 0px 25px;
+}
+
+.cardDev:hover {
+    transform: scale(1.1);
+}
+
+.imagemDev {
+    width: 60%;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }

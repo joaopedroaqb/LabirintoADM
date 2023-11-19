@@ -5,102 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+    <link rel="stylesheet" href="css/index.css" />
     <style>
-        body {
-            background-image: url("../img/wallpaper_inicio.jpg");
-            padding: 0;
-            margin: 0;
-            width: 100vw;
-            height: 100vh;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background-color: #f1f1f19d;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-top: 0;
-        }
-
-        a {
-            font-size: 16px;
-            display: block;
-            margin: 10px 0;
-            color: #333;
-            /* Cor do texto */
-            text-decoration: none;
-        }
-
-        a#homePgBtn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 20px;
-            transition: background-color 0.3s;
-        }
-
-        a#homePgBtn:hover {
-            background-color: #0056b3;
-        }
-
-        .botaoMenu {
-            width: 20vw;
-            height: 50px;
-            background-color: azure;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            border-radius: 10px;
-            border: 3px solid rgb(117, 117, 117);
-            padding: 0;
-            text-decoration: none;
-            color: black;
-        }
-
-        .botaoMenu img {
-            width: 40px;
-        }
-
-        .botaoMenu span {
-            width: 100%;
-            text-align: center;
-            font-size: 1.5em;
+        #tituloJogo {
+            width: 30vw;
+            height: 100px;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <h1>Maze Runner</h1>
+        <img id="tituloJogo" src="./img/tituloJogo.png">
         <h3>O "Labirinto de Administração" é o emocionante projeto final da disciplina de Introdução à Administração. Trata-se de um jogo de labirinto que combina diversão e aprendizado, 
             pois desafia os jogadores com perguntas de administração de diferentes níveis de dificuldade. Com o uso das tecnologias HTML5 e JavaScript, este jogo oferece uma experiência interativa envolvente. 
             Os jogadores devem guiar seu personagem através do intricado labirinto, respondendo às perguntas corretamente para avançar. Uma oportunidade única de testar suas habilidades de 
             administração enquanto se divertem!</h3>
         <h1>Desenvolvedores</h1>
-        <a href="/bruno.html"> <strong>Bruno Gomes Pereira</strong></a>
-        <a href="/eduardo.html"> <strong>Eduardo Fidelis de Medeiros</strong></a>
-        <a href="/jp.html"> <strong>João Pedro Araujo Queiroz Barbosa</strong></a>
-        <a href="/otavio.html"> <strong>Otavio Cardoso</strong></a>
+        <div class="containerDevs">
+            <div class="cardDev">
+                <img src="./img/bruno.jpeg" class="imagemDev">
+                <strong>Bruno Gomes Pereira</strong>
+            </div>
+            <div class="cardDev">
+                <img src="./img/eduardo.jpeg" class="imagemDev">
+                <strong>Eduardo Fidelis de Medeiros</strong>
+            </div>
+            <div class="cardDev">
+                <img src="./img/jp.jpg" class="imagemDev">
+                <strong>João Pedro Araujo Queiroz Barbosa</strong>
+            </div>
+            <div class="cardDev">
+                <img src="./img/otavio.jpeg" class="imagemDev">
+                <strong>Otavio Cardoso</strong>
+            </div>
+        </div>
     </div>
-    <a href='index.html' class="botaoMenu">
-        <span>Menu principal</span></a>
+    <a href="index.html" class="botoes">
+        <img src="./img/espada.png">
+        <span>INÍCIO</span>
+    </a>
 </body>
 
 </html>
