@@ -791,7 +791,6 @@
 	
 		ctx.restore();
 	
-		// Desenha o jogador
 		ctx.drawImage(
 			img,
 			player.srcX, player.srcY, player.width, player.height,
