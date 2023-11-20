@@ -1,7 +1,7 @@
 (async function(){
 	var cnv = document.querySelector("canvas");
 	var ctx = cnv.getContext("2d");
-	const res = await fetch("https://github.com/joaopedroaqb/LabirintoADM/package.json");
+	const res = await fetch("package.json");
 	const perguntas = await res.json();
 	var WIDTH = cnv.width, HEIGHT = cnv.height;
 	
