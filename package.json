@@ -263,6 +263,17 @@
               "D": "Produto líder de mercado: Vaca Leiteira; Produto em ascensão: Ponto de Interrogação; Produto com baixa participação de mercado: Estrela."
             },
             "RespostaCorreta": "A"
+          },
+          {
+            "Nivel": "média",
+            "Enunciado": "Durante o crescimento de um empreendimento, qual prática de gestão é crucial para garantir a eficácia e a eficiência operacional?",
+            "Opcoes": {
+              "A": "Delegação seletiva",
+              "B": "Microgerenciamento constante",
+              "C": "Ignorar feedback dos funcionários",
+              "D": "Tomada de decisão centralizada"
+            },
+            "RespostaCorreta": "A"
           }
     ],
     "PerguntasMediasOrganizacao":[
@@ -287,6 +298,17 @@
               "D": "Produção customizada."
             },
             "RespostaCorreta": "B"
+          },
+          {
+          "Nivel": "média",
+          "Enunciado": "Na abordagem das cinco dimensões da confiança proposta por Mayer, Davis e Schoorman, qual dimensão refere-se à crença de que a outra parte tem habilidades e competências relevantes?",
+          "Opcoes": {
+            "A": "Integridade",
+            "B": "Habilidade",
+            "C": "Benevolência",
+            "D": "Previsibilidade"
+          },
+          "RespostaCorreta": "B"
           }
     ],
     "PerguntasMediaLideranca":[
@@ -322,6 +344,28 @@
               "D": "A liderança visionária é o único meio de garantir o sucesso a longo prazo de uma organização."
             },
             "RespostaCorreta": "C"
+          },
+          {
+            "Nivel": "média",
+            "Enunciado": "Como a dimensão de benevolência contribui para a construção da confiança nas relações interpessoais?",
+            "Opcoes": {
+              "A": "Demonstrando competência e habilidades específicas.",
+              "B": "Mostrando preocupação e interesse pelo bem-estar da outra parte.",
+              "C": "Mantendo uma comunicação clara e transparente.",
+              "D": "Cumprindo promessas e compromissos."
+            },
+            "RespostaCorreta": "B"
+          },
+          {
+            "Nivel": "média",
+            "Enunciado": "Qual é a diferença fundamental entre as estratégias de marketing pull e push",
+            "Opcoes": {
+              "A": "A estratégia pull concentra-se em incentivar a demanda dos consumidores, enquanto a estratégia push enfoca a promoção para intermediários e revendedores.",
+              "B": "A estratégia push destaca a criação de demanda entre os consumidores finais, enquanto a estratégia pull se concentra na distribuição eficiente para varejistas.",
+              "C": "Ambas as estratégias são sinônimas, referindo-se à promoção de produtos diretamente aos consumidores.",
+              "D": "A estratégia pull é exclusivamente utilizada em marketing online, enquanto a estratégia push é mais tradicional."
+            },
+            "RespostaCorreta": "A"
           }
     ],
     "PerguntasMediasControle":[
@@ -357,7 +401,18 @@
               "D": "Permitir que um amigo leia uma mensagem recebida no seu celular."
             },
             "RespostaCorreta": "B"
-          }
+          },
+          {
+            "Nivel": "média",
+            "Enunciado": "Qual é a principal função da cultura organizacional em uma empresa?",
+            "Opcoes": {
+              "A": "Aumentar a hierarquia e centralização de poder.",
+              "B": "Estabelecer políticas estritas para controlar os funcionários.",
+              "C": "Facilitar a integração e orientar o comportamento dos membros da organização.",
+              "D": "Minimizar a diversidade de pensamento para promover a conformidade."
+            },
+            "RespostaCorreta": "C"
+          }          
     ],
     "PerguntasMediasAreasFunc":[
         {
@@ -390,6 +445,17 @@
               "B": "Rápida evolução tecnológica dos materiais e sua aplicação em novos produtos.",
               "C": "Ampliação da visão sistêmica da cadeia produtiva e seus impactos ambientais.",
               "D": "Diminuição da preocupação com a sustentabilidade e reciclagem na produção."
+            },
+            "RespostaCorreta": "D"
+          },
+          {
+            "Nivel": "média",
+            "Enunciado": "Na segmentação de mercado, o que caracteriza um mercado geográfico?",
+            "Opcoes": {
+              "A": "Divisão com base nas características demográficas dos consumidores.",
+              "B": "Agrupamento de consumidores com base em seus comportamentos de compra.",
+              "C": "Classificação de consumidores com base em suas atitudes e valores.",
+              "D": "Segmentação com base na localização física ou geográfica dos consumidores."
             },
             "RespostaCorreta": "D"
           }
@@ -427,6 +493,17 @@
               "D": "A oferta de produtos para consumidores variados."
             },
             "RespostaCorreta": "B"
+          },
+          {
+            "Nivel": "difícil",
+            "Enunciado": "Em termos de estratégia corporativa, qual dos seguintes conceitos destaca a importância de adaptar as estratégias da empresa às condições específicas dos mercados locais, considerando as diferenças culturais, regulatórias e de demanda?",
+            "Opcoes": {
+              "A": "Estratégia global",
+              "B": "Estratégia de internacionalização",
+              "C": "Estratégia de transnacionalização",
+              "D": "Estratégia de localização"
+            },
+            "RespostaCorreta": "D"
           }
     ],
     "PerguntasDificeisOrganizacao":[
@@ -484,7 +561,18 @@
               "D": "Eles preferiam amplitudes de controle variáveis, dependendo da situação."
             },
             "RespostaCorreta": "B"
-          }
+          },
+          {
+            "Nivel": "difícil",
+            "Enunciado": "Em uma cultura organizacional baseada em inovação, quais características seriam mais valorizadas?",
+            "Opcoes": {
+              "A": "Conformidade e estabilidade.",
+              "B": "Tomada de decisões centralizada e estrutura hierárquica rígida.",
+              "C": "Flexibilidade, experimentação e aceitação de riscos.",
+              "D": "Ênfase na tradição e resistência à mudança."
+            },
+            "RespostaCorreta": "C"
+          }          
     ],
     "PerguntasDificeisLideranca":[
         {
@@ -543,6 +631,17 @@
               "D": "Uma empresa de varejo que realiza uma pesquisa de satisfação com os clientes após a compra."
             },
             "RespostaCorreta": "B"
+          },
+          {
+            "Nivel": "difícil",
+            "Enunciado": "Como parte de uma estratégia de crescimento, um empreendedor está considerando a internacionalização. Quais são os principais desafios que ele pode enfrentar nesse contexto, e como eles podem impactar o controle sobre a empresa?",
+            "Opcoes": {
+              "A": "Complexidade regulatória e barreiras culturais, que podem exigir adaptações na gestão e perda de controle direto.",
+              "B": "Sinergias operacionais e facilidade de comunicação, que facilitam o controle global da empresa.",
+              "C": "Homogeneidade de mercados e uniformidade de práticas de gestão, que facilitam a manutenção do controle centralizado.",
+              "D": "Alta familiaridade com os mercados internacionais e baixa heterogeneidade cultural, que favorecem o controle direto sobre todas as operações."
+            },
+            "RespostaCorreta": "A"
           }
     ],
     "PerguntasDificeisAreasFunc":[
@@ -578,6 +677,17 @@
               "D": "Limita-se à avaliação financeira, ignorando aspectos operacionais e comerciais das empresas."
             },
             "RespostaCorreta": "A"
+          },
+          {
+            "Nivel": "difícil",
+            "Enunciado": "Qual das seguintes abordagens de estratégia corporate é caracterizada pela busca de sinergias entre diferentes unidades de negócios, visando a criação de valor através da integração e coordenação eficazes?            ",
+            "Opcoes":{
+              "A": "Estratégia de diversificação não relacionada",
+              "B": "Estratégia de concentração",
+              "C": "Estratégia de fusão horizontal",
+              "D": "Estratégia de especialização vertical"
+            },
+            "RespostaCorreta": "C"
           }
     ]
 }
