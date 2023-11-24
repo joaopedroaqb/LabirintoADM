@@ -643,22 +643,6 @@
 		document.querySelector("#modalErrou").style.visibility = 'visible'
 		document.querySelector("#errosSpan").innerHTML = `1 de Vida`
 		vida -= 1
-		if (tipoQuestao === 1) {
-			document.querySelector("#ganhosSpan").innerHTML = `${nivelQuestao*3} de Vida`
-			vida -= 1
-		} else if (tipoQuestao === 2) {
-			document.querySelector("#ganhosSpan").innerHTML = `${nivelQuestao*3} de Dano`
-			armour -= 1
-		} else if (tipoQuestao === 3) {
-			document.querySelector("#ganhosSpan").innerHTML = `${nivelQuestao*3} de Armadura`
-			armour -= 1
-		} else if (tipoQuestao === 4) {
-			document.querySelector("#ganhosSpan").innerHTML = `${nivelQuestao*3} de Vida`
-			vida -= 1
-		} else if (tipoQuestao === 5) {
-			document.querySelector("#ganhosSpan").innerHTML = `${nivelQuestao*3} de Dano`
-			armour -= 1
-		}
 		verificaVida()
 	}
 
