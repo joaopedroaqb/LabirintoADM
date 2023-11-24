@@ -10,7 +10,7 @@
 	
 	var tileSize = 32;
 	var tileSrcSize = 96;
-	var vida = 10
+	var vida = 15
 	var armour = 10 
 	var dano = 10
 	var img = new Image();
@@ -738,12 +738,11 @@
 		// Aplica a tradução para seguir o jogador
 		ctx.translate(-cam.x, -cam.y);
 	
-		
-	
+
 		// Desenha o campo de visão circular ao redor do jogador
 		ctx.save();
 		ctx.beginPath();
-		ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 50, 0, 2 * Math.PI);
+		ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 100, 0, 2 * Math.PI);
 		ctx.clip();
 		ctx.closePath();
 		// Desenha o labirinto
@@ -767,7 +766,7 @@
 			var centerY = player.y + player.height / 2;
 			var distance = Math.sqrt(Math.pow(centerX - (staticChar.x + staticChar.width / 2), 2) + Math.pow(centerY - (staticChar.y + staticChar.height / 2), 2));
 	
-			if (distance < 50) { // Ajuste o raio conforme necessário
+			if (distance < 110) { // Ajuste o raio conforme necessário
 				ctx.drawImage(staticChar.img, staticChar.x, staticChar.y, staticChar.width, staticChar.height);
 			}
 		}
