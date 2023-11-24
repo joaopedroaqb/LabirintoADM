@@ -282,17 +282,16 @@
 			var staticChar = staticCharacters[i];
 			var correto = false
 			if (blockRectangle(player, staticChar)) {
-				console.log(staticChar)
 				numeroObjeto = staticCharacters.indexOf(staticChar)
 				if (staticChar.nivelQuestao == 1 && staticChar.tipoQuestao == 1) {						
 					numeroQuestao = Math.floor(Math.random() * perguntas.PerguntasFaceisPlanejamento.length)
 					document.querySelector(".pergunta").innerHTML = `
 						<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisPlanejamento[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -312,10 +311,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 						<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasPlanejamento[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -336,10 +335,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 						<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisPlanejamento[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -359,10 +358,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 					<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisOrganizacao[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -382,10 +381,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 						<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasOrganizacao[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -405,10 +404,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 						<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisOrganizacao[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -428,10 +427,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 						<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisLideranca[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -451,10 +450,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 					<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasMediaLideranca[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediaLideranca[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediaLideranca[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediaLideranca[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediaLideranca[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediaLideranca[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediaLideranca[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediaLideranca[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediaLideranca[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -474,10 +473,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 					<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisLideranca[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -496,10 +495,10 @@
 						numeroQuestao = Math.floor(Math.random() * perguntas.PerguntasFaceisControle.length)
 						document.querySelector(".pergunta").innerHTML = `
 							<span class="enunciado">${perguntas.PerguntasFaceisControle[numeroQuestao]['Enunciado']}</span>
-							<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisControle[numeroQuestao]['Opcoes']['A']}</span>
-							<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisControle[numeroQuestao]['Opcoes']['B']}</span>
-							<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisControle[numeroQuestao]['Opcoes']['C']}</span>
-							<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisControle[numeroQuestao]['Opcoes']['D']}</span>
+							<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisControle[numeroQuestao]['Opcoes']['A']}</span>
+							<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisControle[numeroQuestao]['Opcoes']['B']}</span>
+							<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisControle[numeroQuestao]['Opcoes']['C']}</span>
+							<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisControle[numeroQuestao]['Opcoes']['D']}</span>
 						`
 						document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 						document.querySelector("#respostaA").addEventListener("click", () => {
@@ -518,10 +517,10 @@
 					numeroQuestao = Math.floor(Math.random() * perguntas.PerguntasMediasControle.length)
 					document.querySelector(".pergunta").innerHTML = `
 						<span class="enunciado">${perguntas.PerguntasMediasControle[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasControle[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasControle[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasControle[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasControle[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasControle[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasControle[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasControle[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasControle[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -540,10 +539,10 @@
 					numeroQuestao = Math.floor(Math.random() * perguntas.PerguntasDificeisControle.length)
 					document.querySelector(".pergunta").innerHTML = `
 						<span class="enunciado">${perguntas.PerguntasDificeisControle[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisControle[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisControle[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisControle[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisControle[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisControle[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisControle[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisControle[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisControle[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -563,10 +562,10 @@
 						document.querySelector(".pergunta").innerHTML = `
 							<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 							<span class="enunciado">${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Enunciado']}</span>
-							<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Opcoes']['A']}</span>
-							<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Opcoes']['B']}</span>
-							<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Opcoes']['C']}</span>
-							<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Opcoes']['D']}</span>
+							<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Opcoes']['A']}</span>
+							<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Opcoes']['B']}</span>
+							<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Opcoes']['C']}</span>
+							<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasFaceisAreasFunc[numeroQuestao]['Opcoes']['D']}</span>
 						`
 						document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 						document.querySelector("#respostaA").addEventListener("click", () => {
@@ -586,10 +585,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 					<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasMediasAreasFunc[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
@@ -609,10 +608,10 @@
 					document.querySelector(".pergunta").innerHTML = `
 						<img src="${staticChar.img.currentSrc}" class="personagemPergunta"/>
 						<span class="enunciado">${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Enunciado']}</span>
-						<span class="respostas" id="respostaA"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Opcoes']['A']}</span>
-						<span class="respostas" id="respostaB"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Opcoes']['B']}</span>
-						<span class="respostas" id="respostaC"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Opcoes']['C']}</span>
-						<span class="respostas" id="respostaD"><img src="../img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Opcoes']['D']}</span>
+						<span class="respostas" id="respostaA"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Opcoes']['A']}</span>
+						<span class="respostas" id="respostaB"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Opcoes']['B']}</span>
+						<span class="respostas" id="respostaC"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Opcoes']['C']}</span>
+						<span class="respostas" id="respostaD"><img src="img/arrows.png" class="setas_pergunta" />${perguntas.PerguntasDificeisAreasFunc[numeroQuestao]['Opcoes']['D']}</span>
 					`
 					document.querySelector("#modalPopUpPergunta").style.visibility = 'visible'
 					document.querySelector("#respostaA").addEventListener("click", () => {
