@@ -14,3 +14,5 @@ Este projeto é um jogo de labirinto projetado para o trabalho final da discipli
 - HTML5
 - JavaScript
 
+## Créditos
+- Mapa criado baseando-se nas videos aulas dadas por Gustavo Silveira na playlist de vídeos "Criação da base para um jogo de labirinto com HTML5 e JavaScript #Pt.". Disponivel em: https://www.youtube.com/watch?v=ZbXwjuetzpo
