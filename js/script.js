@@ -142,6 +142,7 @@
 	// Mago - Controle - 3
 	// Baú - Controle - 4
 	// Machadeiro - Áreas Funcionais - 5
+	// criarObjeto(tileSize*7,tileSize,64,64,1,6,boss, false)
 	criarObjeto(tileSize*18,tileSize*57,64,64,1,6,boss, false)
 	criarObjeto(tileSize*5,tileSize*3,32,32,1,1,elfo, false)
 	criarObjeto(tileSize*5,tileSize*25,32,32,1,1,elfo, false)
